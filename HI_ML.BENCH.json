@@ -1,0 +1,1195 @@
+{
+  "schema": "anticloud.bench17/1",
+  "project": "HI_ML",
+  "category": "MEDICAL_HEALTH",
+  "run_timestamp_utc": "2026-10-05T14:27:33Z",
+  "runner": "E:/opencode-work/tier_agents/_tools/bl_common.py + bl_run.py",
+  "clone_dir_name": "UPSTREAM_CLONE",
+  "clone_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\MEDICAL_HEALTH\\HI_ML\\UPSTREAM_CLONE",
+  "excluded_by_policy": [
+    "all AI/LLM latency and throughput benchmarks",
+    "no model downloaded; pytorch/torch/transformers never imported"
+  ],
+  "status": "BENCHMARKED",
+  "benchmarks": {
+    "01_loc_file_counts": {
+      "status": "MEASURED",
+      "total_files_in_tree": 502,
+      "walk_truncated_at_cap": false,
+      "source_and_doc_files_counted": 366,
+      "files_skipped_over_4mb": 0,
+      "total_loc": 50155,
+      "blank_lines": 9768,
+      "comment_lines": 4247,
+      "sloc_estimate": 45908,
+      "primary_language": "Python",
+      "primary_language_loc": 45136,
+      "languages": [
+        {
+          "language": "Python",
+          "loc": 45136,
+          "files": 277
+        },
+        {
+          "language": "Markdown",
+          "loc": 3822,
+          "files": 50
+        },
+        {
+          "language": "Make",
+          "loc": 655,
+          "files": 7
+        },
+        {
+          "language": "Text",
+          "loc": 207,
+          "files": 17
+        },
+        {
+          "language": "Shell",
+          "loc": 139,
+          "files": 5
+        },
+        {
+          "language": "reStructuredText",
+          "loc": 127,
+          "files": 8
+        },
+        {
+          "language": "Dockerfile",
+          "loc": 69,
+          "files": 2
+        }
+      ],
+      "files_by_extension": {
+        ".py": 277,
+        ".md": 50,
+        ".txt": 17,
+        ".rst": 8,
+        ".mk": 7,
+        ".sh": 5,
+        ".dockerfile": 2
+      },
+      "method": "physical line count of every code/doc file in the real clone"
+    },
+    "02_licence_detection": {
+      "status": "MEASURED",
+      "id": "MIT",
+      "file": "LICENSE",
+      "confidence": "high",
+      "text_bytes": 1141,
+      "sha256": "c2cfccb812fe4821",
+      "copyright_years": [],
+      "copyright_holders": [],
+      "non_commercial_signal": null,
+      "licence_class": "A",
+      "class_basis": "MIT verified in LICENSE",
+      "class_meaning": "Permissive. May ship inside Anticommons derivatives with attribution and licence notice retained.",
+      "ship_policy": "MAY_SHIP_WITH_ANTICOMMONS_AND_ATTRIBUTION",
+      "packaging_declarations": [
+        {
+          "id": "MIT",
+          "file": "hi-ml-azure/setup.py",
+          "kind": "packaging_metadata"
+        },
+        {
+          "id": "MIT",
+          "file": "hi-ml-cpath/setup.py",
+          "kind": "packaging_metadata"
+        },
+        {
+          "id": "MIT",
+          "file": "hi-ml-multimodal/setup.py",
+          "kind": "packaging_metadata"
+        },
+        {
+          "id": "MIT",
+          "file": "hi-ml/setup.py",
+          "kind": "packaging_metadata"
+        },
+        {
+          "id": "MIT",
+          "file": "new_project_template/setup.py",
+          "kind": "packaging_metadata"
+        }
+      ],
+      "licence_files_examined": [
+        {
+          "file": "LICENSE",
+          "bytes": 1141,
+          "kind": "licence_text"
+        },
+        {
+          "file": "pyproject.toml",
+          "bytes": 119,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "hi-ml-azure/LICENSE",
+          "bytes": 1141,
+          "kind": "licence_text"
+        },
+        {
+          "file": "hi-ml/LICENSE",
+          "bytes": 1141,
+          "kind": "licence_text"
+        },
+        {
+          "file": "hi-ml-azure/setup.py",
+          "bytes": 4128,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "hi-ml-cpath/setup.py",
+          "bytes": 3968,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "hi-ml-multimodal/setup.py",
+          "bytes": 1510,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "hi-ml/setup.py",
+          "bytes": 3861,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "new_project_template/setup.py",
+          "bytes": 3896,
+          "kind": "packaging_metadata"
+        }
+      ],
+      "licence_files_examined_count": 9,
+      "default_rule": "unknown or absent licence = class C, never A",
+      "method": "licence text read from the tree and matched against the SPDX-style grant text"
+    },
+    "03_dependency_scan": {
+      "status": "MEASURED",
+      "manifests": [
+        {
+          "manifest": "Makefile",
+          "ecosystem": "make",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "pyproject.toml",
+          "ecosystem": "pypi",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "docs/Makefile",
+          "ecosystem": "make",
+          "declared": 1,
+          "sample": [
+            "make"
+          ]
+        },
+        {
+          "manifest": "docs/source/amulet/environment.yml",
+          "ecosystem": "conda",
+          "declared": 32,
+          "sample": [
+            "<1.7",
+            "AmuletExample",
+            "azureml-core==1.43.0",
+            "azureml-dataset-runtime[fuse]==1.43.0",
+            "azureml-tensorboard==1.43.0",
+            "azureml-train-core==1.43.0",
+            "channels:",
+            "conda-forge",
+            "conda-merge==0.1.5",
+            "cudatoolkit=11.3.1",
+            "dataclasses-json==0.5.2",
+            "defaults",
+            "dependencies:",
+            "jinja2==3.0.2",
+            "matplotlib==3.4.3",
+            "msal-extensions==0.3.1",
+            "name:",
+            "opencv-python-headless==4.5.1.48",
+            "pandas==1.3.4",
+            "param==1.12",
+            "pip:",
+            "pip=22.2.2",
+            "protobuf==3.20.1",
+            "python=3.9.13",
+            "pytorch"
+          ]
+        },
+        {
+          "manifest": "hi-ml/environment.yml",
+          "ecosystem": "conda",
+          "declared": 291,
+          "sample": [
+            "'create_and_lock_environment.sh'",
+            "'primary_deps.yml'",
+            "DO",
+            "EDIT",
+            "FILE",
+            "MANUALLY",
+            "NOT",
+            "THIS",
+            "To",
+            "WARNING",
+            "_libgcc_mutex=0.1=conda_forge",
+            "_openmp_mutex=4.5=2_gnu",
+            "absl-py==2.0.0",
+            "adal==1.2.7",
+            "aiohttp==3.8.6",
+            "aiosignal==1.3.1",
+            "alabaster==0.7.13",
+            "alembic==1.12.1",
+            "and",
+            "applicationinsights==0.11.10",
+            "argcomplete==2.1.2",
+            "astroid==2.15.8",
+            "async-timeout==4.0.3",
+            "attrs==21.4.0",
+            "azure-ai-ml==1.11.1"
+          ]
+        },
+        {
+          "manifest": "hi-ml/Makefile",
+          "ecosystem": "make",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "hi-ml/setup.py",
+          "ecosystem": "pypi",
+          "declared": 12,
+          "sample": [
+            "0.1.1.post",
+            "0.1.2.post124",
+            "GITHUB_REF",
+            "GITHUB_RUN_NUMBER",
+            "console_scripts",
+            "hi_ml",
+            "latest_version.txt",
+            "package_description.md",
+            "package_name.txt",
+            "run_requirements.txt",
+            "src",
+            "utf-8"
+          ]
+        },
+        {
+          "manifest": "hi-ml/other/image_loading/environment.yml",
+          "ecosystem": "conda",
+          "declared": 12,
+          "sample": [
+            "channels:",
+            "defaults",
+            "dependencies:",
+            "image_loader",
+            "line_profiler==3.3.1",
+            "monai[all]==0.7.0",
+            "name:",
+            "opencv-python-headless==4.5.4.58",
+            "pip:",
+            "pip=23.3",
+            "python=3.9.18",
+            "simpleitk==1.2.4"
+          ]
+        },
+        {
+          "manifest": "hi-ml/testhiml/environment.yml",
+          "ecosystem": "conda",
+          "declared": 43,
+          "sample": [
+            "AzureML",
+            "It",
+            "The",
+            "This",
+            "add",
+            "and",
+            "are",
+            "automatically",
+            "be",
+            "by",
+            "channels:",
+            "cudatoolkit=11.3.1",
+            "defaults",
+            "definition",
+            "dependencies:",
+            "environment",
+            "folder.",
+            "for",
+            "from",
+            "health_azure",
+            "health_ml",
+            "himl-basic",
+            "itself.",
+            "jobs",
+            "logic"
+          ]
+        },
+        {
+          "manifest": "hi-ml-azure/environment.yml",
+          "ecosystem": "conda",
+          "declared": 250,
+          "sample": [
+            "'create_and_lock_environment.sh'",
+            "'primary_deps.yml'",
+            "DO",
+            "EDIT",
+            "FILE",
+            "MANUALLY",
+            "NOT",
+            "THIS",
+            "To",
+            "WARNING",
+            "_libgcc_mutex=0.1=main",
+            "_openmp_mutex=5.1=1_gnu",
+            "absl-py==2.0.0",
+            "adal==1.2.7",
+            "alabaster==0.7.13",
+            "alembic==1.12.1",
+            "and",
+            "applicationinsights==0.11.10",
+            "argcomplete==2.1.2",
+            "astroid==2.15.8",
+            "attrs==21.4.0",
+            "azure-ai-ml==1.11.1",
+            "azure-common==1.1.28",
+            "azure-core==1.29.5",
+            "azure-graphrbac==0.61.1"
+          ]
+        },
+        {
+          "manifest": "hi-ml-azure/Makefile",
+          "ecosystem": "make",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "hi-ml-azure/setup.py",
+          "ecosystem": "pypi",
+          "declared": 12,
+          "sample": [
+            "99.99.post124",
+            "99.991.post",
+            "GITHUB_REF",
+            "GITHUB_RUN_NUMBER",
+            "console_scripts",
+            "hi_ml_azure",
+            "latest_version.txt",
+            "package_description.md",
+            "package_name.txt",
+            "run_requirements.txt",
+            "src",
+            "utf-8"
+          ]
+        },
+        {
+          "manifest": "hi-ml-cpath/environment.yml",
+          "ecosystem": "conda",
+          "declared": 300,
+          "sample": [
+            "'create_and_lock_environment.sh'",
+            "'primary_deps.yml'",
+            "DO",
+            "EDIT",
+            "FILE",
+            "HimlHisto",
+            "MANUALLY",
+            "NOT",
+            "THIS",
+            "To",
+            "WARNING",
+            "_libgcc_mutex=0.1=conda_forge",
+            "_openmp_mutex=4.5=2_gnu",
+            "absl-py==2.1.0",
+            "adal==1.2.7",
+            "aiohttp==3.9.3",
+            "aiosignal==1.3.1",
+            "alabaster==0.7.16",
+            "alembic==1.13.1",
+            "and",
+            "applicationinsights==0.11.10",
+            "argcomplete==3.2.2",
+            "astroid==2.15.8",
+            "asttokens==2.4.1",
+            "async-timeout==4.0.3"
+          ]
+        },
+        {
+          "manifest": "hi-ml-cpath/Makefile",
+          "ecosystem": "make",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "hi-ml-cpath/setup.py",
+          "ecosystem": "pypi",
+          "declared": 11,
+          "sample": [
+            "99.99.post",
+            "99.99.post124",
+            "GITHUB_REF",
+            "GITHUB_RUN_NUMBER",
+            "README.md",
+            "hi_ml_cpath",
+            "latest_version.txt",
+            "package_name.txt",
+            "requirements_run.txt",
+            "src",
+            "utf-8"
+          ]
+        },
+        {
+          "manifest": "hi-ml-cpath/other/slide_image_loading/environment.yml",
+          "ecosystem": "conda",
+          "declared": 12,
+          "sample": [
+            "azureml-defaults==1.32.0",
+            "channels:",
+            "defaults",
+            "dependencies:",
+            "hi-ml-azure==0.1.9",
+            "line_profiler==3.3.1",
+            "monai[all]==0.7.0",
+            "name:",
+            "pip:",
+            "pip=23.3",
+            "python=3.9.18",
+            "slide_image_loader"
+          ]
+        },
+        {
+          "manifest": "hi-ml-multimodal/environment.yml",
+          "ecosystem": "conda",
+          "declared": 15,
+          "sample": [
+            "channels:",
+            "conda-forge",
+            "cudatoolkit=11.1",
+            "defaults",
+            "dependencies:",
+            "multimodal",
+            "name:",
+            "pip:",
+            "pip=23.3",
+            "python=3.9",
+            "pytorch",
+            "pytorch=1.9.0",
+            "requirements_run.txt",
+            "requirements_test.txt",
+            "torchvision=0.10.0"
+          ]
+        },
+        {
+          "manifest": "hi-ml-multimodal/Makefile",
+          "ecosystem": "make",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "hi-ml-multimodal/setup.py",
+          "ecosystem": "pypi",
+          "declared": 6,
+          "sample": [
+            "0.2.2",
+            "README.md",
+            "hi_ml_multimodal",
+            "requirements_run.txt",
+            "src",
+            "utf-8"
+          ]
+        },
+        {
+          "manifest": "new_project_template/environment.yml",
+          "ecosystem": "conda",
+          "declared": 10,
+          "sample": [
+            "channels:",
+            "defaults",
+            "dependencies:",
+            "name:",
+            "newproject",
+            "pip:",
+            "pip=23.3",
+            "pytest==6.2.2",
+            "python=3.9.18",
+            "pytorch"
+          ]
+        },
+        {
+          "manifest": "new_project_template/Makefile",
+          "ecosystem": "make",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "new_project_template/setup.py",
+          "ecosystem": "pypi",
+          "declared": 12,
+          "sample": [
+            "99.99.post",
+            "99.99.post124",
+            "GITHUB_REF",
+            "GITHUB_RUN_NUMBER",
+            "HealthIntelligence",
+            "health_newproject",
+            "hi-ml-newproject",
+            "latest_version.txt",
+            "package_description.md",
+            "package_name.txt",
+            "requirements_run.txt",
+            "utf-8"
+          ]
+        }
+      ],
+      "manifest_count": 22,
+      "ecosystems": {
+        "make": 1,
+        "pypi": 53,
+        "conda": 965
+      },
+      "declared_packages_total": 1019,
+      "lockfiles_on_disk": [],
+      "lockfile_count": 0,
+      "reproducible_build_evidence": false,
+      "method": "manifests parsed from the real tree"
+    },
+    "04_sbom": {
+      "status": "MEASURED",
+      "format": "CycloneDX 1.5",
+      "component_count": 30,
+      "components_with_purl": 30,
+      "artifact": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\MEDICAL_HEALTH\\HI_ML\\sbom\\sbom.cdx.json",
+      "serial_number": "urn:uuid:49270d93-0000-0000-4000-6dbebddbe560",
+      "licence_asserted_in_sbom": "MIT",
+      "licence_class_in_sbom": "A",
+      "method": "dependency manifests actually present in the working tree; zero imports invented"
+    },
+    "05_git_health": {
+      "status": "MEASURED",
+      "is_git_clone": true,
+      "head_sha": "b67c1d27c6b17d8e8ff01f8c507f3cabdb307388",
+      "head_short": "b67c1d27c6b1",
+      "head_date": "2025-04-10T08:35:18+01:00",
+      "head_subject": "ENH: Autoupdate hooks [pre-commit.ci] (#907)",
+      "head_author": "pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+      "remote_url": "https://github.com/microsoft/hi-ml",
+      "is_shallow": true,
+      "commits_in_clone": 1,
+      "tracked_files": 572,
+      "local_and_remote_branches": 3,
+      "tags": 0,
+      "working_tree_dirty_entries": 0,
+      "ci_config": [
+        ".github/workflows (check-pr-title.yml,cpath-pr.yml,hi-ml-pr.yml,multimodal-pr.yml)"
+      ],
+      "ci_present": true,
+      "method": "git plumbing run against the on-disk repo"
+    },
+    "06_security_config_owasp_llm_top10": {
+      "status": "MEASURED",
+      "upstream_security_files": 1,
+      "project_security_files": 124,
+      "total_evidence_files": 125,
+      "upstream_examples": [
+        "SECURITY.md"
+      ],
+      "project_examples": [
+        "16_VULNERABILITY_MANAGEMENT/README.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.docx",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.html",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.pdf",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.pptx",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.docx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.html",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.pdf",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.pptx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.docx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.html",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.json",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.pdf",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.pptx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.txt"
+      ],
+      "llm_specific_artifacts": [],
+      "method": "inventory of real security/audit/threat artefacts in clone and Anticommons folder"
+    },
+    "07_security_config_owasp_top10": {
+      "status": "MEASURED",
+      "evidence_file_count": 21,
+      "files": [
+        "OFFICIAL_BENCHMARKS/03_OWASP.md",
+        "OFFICIAL_BENCHMARKS/05_OWASP.docx",
+        "OFFICIAL_BENCHMARKS/05_OWASP.html",
+        "OFFICIAL_BENCHMARKS/05_OWASP.md",
+        "OFFICIAL_BENCHMARKS/05_OWASP.pdf",
+        "OFFICIAL_BENCHMARKS/05_OWASP.pptx",
+        "OFFICIAL_BENCHMARKS/05_OWASP.txt",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.docx",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.html",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.json",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.md",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.pdf",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.pptx",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.txt",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.docx",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.html",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.json",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.md",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.pdf",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.pptx",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.txt"
+      ],
+      "note": "OWASP Top 10 coverage is evidenced by security policy and audit artefacts that exist on disk; absent files are reported as absent, never asserted"
+    },
+    "08_soc1": {
+      "status": "MEASURED",
+      "control_family": "soc1",
+      "evidence_file_count": 5,
+      "evidence_score": 15,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/03_SOC1.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1.txt",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.json",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.txt"
+      ],
+      "matched_tokens_top": [
+        "soc1",
+        "soc1",
+        "soc1"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "09_soc2_typeii": {
+      "status": "MEASURED",
+      "control_family": "soc2_typeii",
+      "evidence_file_count": 8,
+      "evidence_score": 33,
+      "project_doc_files_scanned": 296,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.json",
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.md",
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.txt",
+        "OFFICIAL_BENCHMARKS/02_SOC2.md",
+        "OFFICIAL_BENCHMARKS/02_SOC2.txt",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.json",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.txt"
+      ],
+      "matched_tokens_top": [
+        "soc2",
+        "typeii",
+        "soc2",
+        "typeii",
+        "soc2",
+        "typeii"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "10_nist_ai_rmf": {
+      "status": "MEASURED",
+      "control_family": "nist_ai_rmf",
+      "evidence_file_count": 6,
+      "evidence_score": 27,
+      "project_doc_files_scanned": 296,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.json",
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.md",
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.txt",
+        "16_VULNERABILITY_MANAGEMENT/README.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.txt"
+      ],
+      "matched_tokens_top": [
+        "nist_ai_rmf",
+        "ai_rmf",
+        "nist_ai_rmf",
+        "ai_rmf",
+        "nist_ai_rmf",
+        "ai_rmf"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "11_nist_sp800_53": {
+      "status": "MEASURED",
+      "control_family": "nist_sp800_53",
+      "evidence_file_count": 3,
+      "evidence_score": 18,
+      "project_doc_files_scanned": 296,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.json",
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.md",
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.txt"
+      ],
+      "matched_tokens_top": [
+        "800_53",
+        "sp800_53",
+        "800_53",
+        "sp800_53",
+        "800_53",
+        "sp800_53"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "12_nist_csf": {
+      "status": "MEASURED",
+      "control_family": "nist_csf",
+      "evidence_file_count": 6,
+      "evidence_score": 27,
+      "project_doc_files_scanned": 296,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.json",
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.md",
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.txt",
+        "15_DISASTER_RECOVERY/DISASTER_RECOVERY.md",
+        "15_DISASTER_RECOVERY/DISASTER_RECOVERY.txt",
+        "15_DISASTER_RECOVERY/README.md"
+      ],
+      "matched_tokens_top": [
+        "nist_csf",
+        "csfw",
+        "nist_csf",
+        "csfw",
+        "nist_csf",
+        "csfw"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "13_fedramp": {
+      "status": "MEASURED",
+      "control_family": "fedramp",
+      "evidence_file_count": 8,
+      "evidence_score": 24,
+      "project_doc_files_scanned": 296,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.json",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.json",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.md",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.txt"
+      ],
+      "matched_tokens_top": [
+        "fedramp",
+        "fedramp",
+        "fedramp"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "14_pci_dss": {
+      "status": "MEASURED",
+      "control_family": "pci_dss",
+      "evidence_file_count": 3,
+      "evidence_score": 18,
+      "project_doc_files_scanned": 296,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.json",
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.md",
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.txt"
+      ],
+      "matched_tokens_top": [
+        "pci",
+        "pci_dss",
+        "pci",
+        "pci_dss",
+        "pci",
+        "pci_dss"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "15_iso27001": {
+      "status": "MEASURED",
+      "control_family": "iso27001",
+      "evidence_file_count": 3,
+      "evidence_score": 9,
+      "project_doc_files_scanned": 296,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.json",
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.md",
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.txt"
+      ],
+      "matched_tokens_top": [
+        "iso_27001",
+        "iso_27001",
+        "iso_27001"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "16_mitre_attack_mapping": {
+      "status": "MEASURED",
+      "control_family": "mitre_attack",
+      "evidence_file_count": 3,
+      "evidence_score": 9,
+      "project_doc_files_scanned": 296,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.json",
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.md",
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.txt"
+      ],
+      "matched_tokens_top": [
+        "mitre",
+        "mitre",
+        "mitre"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "17_ml_trl_readiness": {
+      "status": "MEASURED",
+      "framework": "Lavin, Weidner & Claus, 'Quantifying the maturity of machine learning for life sciences', Nature Methods 19, 1036-1039 (2022); TRL scale adapted for software/engineering artefacts",
+      "trl_level": 7,
+      "trl_scale": "1 = basic R&D idea; 9 = actual system proven in successful operations",
+      "level_reasons": [
+        "source tree present (design realised in code)",
+        "test files present (component validation)",
+        "packaging manifest + >10 test files",
+        ">25 test files + deployment config",
+        "CI pipeline + deploy config + >3 docs"
+      ],
+      "evidence": {
+        "test_files": 45,
+        "test_examples": [
+          "hi-ml/src/health_ml/utils/regression_test_utils.py",
+          "hi-ml/testhiml/conftest.py",
+          "hi-ml/testhiml/testhiml/test_attentionlayers.py",
+          "hi-ml/testhiml/testhiml/test_bag_utils.py",
+          "hi-ml/testhiml/testhiml/test_box_utils.py",
+          "hi-ml/testhiml/testhiml/test_checkpoints.py",
+          "hi-ml/testhiml/testhiml/test_common_utils.py",
+          "hi-ml/testhiml/testhiml/test_config_loader.py"
+        ],
+        "source_files": 41,
+        "source_examples": [
+          ".amlignore",
+          ".amltignore",
+          ".coveragerc",
+          ".git-blame-ignore-revs",
+          ".gitignore",
+          "hubconf.py",
+          "LICENSE",
+          "Makefile"
+        ],
+        "packaging_manifests": 6,
+        "packaging_examples": [
+          "pyproject.toml",
+          "hi-ml/setup.py",
+          "hi-ml-azure/setup.py",
+          "hi-ml-cpath/setup.py",
+          "hi-ml-multimodal/setup.py",
+          "new_project_template/setup.py"
+        ],
+        "deployment_files": 2,
+        "deployment_examples": [
+          ".devcontainer/Dockerfile",
+          "hi-ml-cpath/other/slide_image_loading/Dockerfile"
+        ],
+        "documentation_files": 45,
+        "documentation_examples": [
+          "CHANGELOG.md",
+          "CODE_OF_CONDUCT.md",
+          "README.md",
+          "SECURITY.md",
+          "docs/source/amulet_example.md",
+          "docs/source/amulet_overview.md"
+        ],
+        "ci_config": [
+          ".github/workflows (check-pr-title.yml,cpath-pr.yml,hi-ml-pr.yml,multimodal-pr.yml)"
+        ],
+        "sbom_artifact": true,
+        "security_policy_files": 125,
+        "security_policy_examples": [
+          "SECURITY.md"
+        ]
+      },
+      "measured_from": "the cloned working tree file inventory, not from any project self-claim"
+    },
+    "00_shape_k_graphrag": {
+      "status": "PASS",
+      "checks_present": [
+        "01_loc_file_counts",
+        "02_licence_detection",
+        "03_dependency_scan",
+        "04_sbom",
+        "05_git_health",
+        "06_security_config_owasp_llm_top10",
+        "07_security_config_owasp_top10",
+        "08_soc1",
+        "09_soc2_typeii",
+        "10_nist_ai_rmf",
+        "11_nist_sp800_53",
+        "12_nist_csf",
+        "13_fedramp",
+        "14_pci_dss",
+        "15_iso27001",
+        "16_mitre_attack_mapping",
+        "17_ml_trl_readiness"
+      ],
+      "check_count": 17,
+      "required_15_present": true,
+      "mitre_present": true,
+      "trl_present": true,
+      "no_ai_latency_bench": true,
+      "no_torch_import": true,
+      "shape": "K_GRAPHRAG",
+      "threshold_source": "structural (check count and presence), never lowered",
+      "wall_seconds": 311.0
+    }
+  },
+  "source_anchors_read": {
+    "entry_points": [
+      "pyproject.toml",
+      "hi-ml/setup.py",
+      "hi-ml/src/health_ml/__init__.py",
+      "hi-ml/src/health_ml/data/__init__.py",
+      "hi-ml/src/health_ml/losses/__init__.py",
+      "hi-ml/src/health_ml/networks/__init__.py",
+      "hi-ml/src/health_ml/networks/blocks/__init__.py",
+      "hi-ml/src/health_ml/networks/layers/__init__.py",
+      "hi-ml/src/health_ml/networks/nets/__init__.py",
+      "hi-ml/src/health_ml/utils/__init__.py",
+      "hi-ml/testhiml/testhiml/__init__.py",
+      "hi-ml/testhiml/testhiml/data/__init__.py",
+      "hi-ml/testhiml/testhiml/utils/__init__.py",
+      "hi-ml-azure/setup.py",
+      "hi-ml-azure/src/health_azure/__init__.py",
+      "hi-ml-azure/testazure/testazure/__init__.py",
+      "hi-ml-azure/testazure/testazure/test_data/__init__.py",
+      "hi-ml-cpath/setup.py",
+      "hi-ml-cpath/src/health_cpath/__init__.py",
+      "hi-ml-cpath/src/health_cpath/utils/__init__.py",
+      "hi-ml-cpath/testhisto/testhisto/__init__.py",
+      "hi-ml-cpath/testhisto/testhisto/datamodules/__init__.py",
+      "hi-ml-cpath/testhisto/testhisto/datasets/__init__.py",
+      "hi-ml-cpath/testhisto/testhisto/models/__init__.py",
+      "hi-ml-cpath/testhisto/testhisto/preprocessing/__init__.py",
+      "hi-ml-cpath/testhisto/testhisto/utils/__init__.py",
+      "hi-ml-cpath/testSSL/testSSL/__init__.py",
+      "hi-ml-multimodal/setup.py",
+      "hi-ml-multimodal/src/health_multimodal/__init__.py",
+      "hi-ml-multimodal/src/health_multimodal/common/__init__.py",
+      "hi-ml-multimodal/src/health_multimodal/image/__init__.py",
+      "hi-ml-multimodal/src/health_multimodal/image/data/__init__.py",
+      "hi-ml-multimodal/src/health_multimodal/image/model/__init__.py",
+      "hi-ml-multimodal/src/health_multimodal/text/__init__.py",
+      "hi-ml-multimodal/src/health_multimodal/text/data/__init__.py",
+      "hi-ml-multimodal/src/health_multimodal/text/model/__init__.py",
+      "hi-ml-multimodal/src/health_multimodal/vlp/__init__.py",
+      "new_project_template/setup.py"
+    ],
+    "src_dirs": [
+      ".amlignore",
+      ".amltignore",
+      ".coveragerc",
+      ".git-blame-ignore-revs",
+      ".gitignore",
+      "hubconf.py",
+      "LICENSE",
+      "Makefile",
+      ".devcontainer/Dockerfile",
+      "docs/Makefile",
+      "docs/source/conf.py",
+      "hi-ml/.flake8",
+      "hi-ml/.pylintrc",
+      "hi-ml/LICENSE",
+      "hi-ml/Makefile",
+      "hi-ml/setup.py",
+      "hi-ml/testhiml/conftest.py",
+      "hi-ml-azure/.flake8",
+      "hi-ml-azure/.pylintrc",
+      "hi-ml-azure/hello_world.py",
+      "hi-ml-azure/LICENSE",
+      "hi-ml-azure/Makefile",
+      "hi-ml-azure/run_pytest.py",
+      "hi-ml-azure/setup.py",
+      "hi-ml-azure/testazure/conftest.py",
+      "hi-ml-cpath/.flake8",
+      "hi-ml-cpath/.pylintrc",
+      "hi-ml-cpath/Makefile",
+      "hi-ml-cpath/setup.py",
+      "hi-ml-cpath/testhisto/conftest.py",
+      "hi-ml-cpath/testSSL/conftest.py",
+      "hi-ml-multimodal/.flake8",
+      "hi-ml-multimodal/.pylintrc",
+      "hi-ml-multimodal/Makefile",
+      "hi-ml-multimodal/setup.py",
+      "new_project_template/.flake8",
+      "new_project_template/.pylintrc",
+      "new_project_template/Makefile",
+      "new_project_template/setup.py",
+      "new_project_template/health_newproject/dummy.py",
+      "new_project_template/test_newproject/test_dummy.py"
+    ],
+    "tests": [
+      "hi-ml/src/health_ml/utils/regression_test_utils.py",
+      "hi-ml/testhiml/conftest.py",
+      "hi-ml/testhiml/testhiml/test_attentionlayers.py",
+      "hi-ml/testhiml/testhiml/test_bag_utils.py",
+      "hi-ml/testhiml/testhiml/test_box_utils.py",
+      "hi-ml/testhiml/testhiml/test_checkpoints.py",
+      "hi-ml/testhiml/testhiml/test_common_utils.py",
+      "hi-ml/testhiml/testhiml/test_config_loader.py",
+      "hi-ml/testhiml/testhiml/test_data_augmentations.py",
+      "hi-ml/testhiml/testhiml/test_deep_learning_config.py",
+      "hi-ml/testhiml/testhiml/test_eval_runner.py",
+      "hi-ml/testhiml/testhiml/test_model_trainer.py",
+      "hi-ml/testhiml/testhiml/test_regression_test_utils.py",
+      "hi-ml/testhiml/testhiml/test_runner.py",
+      "hi-ml/testhiml/testhiml/test_serialization.py",
+      "hi-ml/testhiml/testhiml/test_split_dataset.py",
+      "hi-ml/testhiml/testhiml/test_training_runner.py",
+      "hi-ml/testhiml/testhiml/utils_testhiml.py",
+      "hi-ml/testhiml/testhiml/__init__.py",
+      "hi-ml/testhiml/testhiml/data/test_placeholder.py",
+      "hi-ml/testhiml/testhiml/data/__init__.py",
+      "hi-ml/testhiml/testhiml/utils/fixed_paths_for_tests.py",
+      "hi-ml/testhiml/testhiml/utils/test_common_utils.py",
+      "hi-ml/testhiml/testhiml/utils/test_diagnostics.py",
+      "hi-ml/testhiml/testhiml/utils/test_logging.py",
+      "hi-ml/testhiml/testhiml/utils/test_reports.py",
+      "hi-ml/testhiml/testhiml/utils/__init__.py",
+      "hi-ml-azure/run_pytest.py",
+      "hi-ml-azure/testazure/conftest.py",
+      "hi-ml-azure/testazure/testazure/test_argparsing.py",
+      "hi-ml-azure/testazure/testazure/test_azure_util.py",
+      "hi-ml-azure/testazure/testazure/test_datasets.py",
+      "hi-ml-azure/testazure/testazure/test_download_aml_run.py",
+      "hi-ml-azure/testazure/testazure/test_get_ml_client.py",
+      "hi-ml-azure/testazure/testazure/test_get_workspace.py",
+      "hi-ml-azure/testazure/testazure/test_himl.py",
+      "hi-ml-azure/testazure/testazure/test_himl_download.py",
+      "hi-ml-azure/testazure/testazure/test_logging.py",
+      "hi-ml-azure/testazure/testazure/test_paths.py",
+      "hi-ml-azure/testazure/testazure/test_run_tensorboard.py",
+      "hi-ml-azure/testazure/testazure/test_traverse.py",
+      "hi-ml-azure/testazure/testazure/utils_testazure.py",
+      "hi-ml-azure/testazure/testazure/__init__.py",
+      "hi-ml-azure/testazure/testazure/test_data/make_tests.py",
+      "hi-ml-azure/testazure/testazure/test_data/__init__.py"
+    ],
+    "deployment": [
+      ".devcontainer/Dockerfile",
+      "hi-ml-cpath/other/slide_image_loading/Dockerfile"
+    ],
+    "build": [
+      "Makefile",
+      "docs/Makefile",
+      "hi-ml/Makefile",
+      "hi-ml-azure/Makefile",
+      "hi-ml-cpath/Makefile",
+      "hi-ml-multimodal/Makefile",
+      "new_project_template/Makefile"
+    ],
+    "docs": [
+      "CHANGELOG.md",
+      "CODE_OF_CONDUCT.md",
+      "README.md",
+      "SECURITY.md",
+      "docs/source/amulet_example.md",
+      "docs/source/amulet_overview.md",
+      "docs/source/authentication.md",
+      "docs/source/azure_setup.md",
+      "docs/source/CHANGELOG.md",
+      "docs/source/checkpoints.md",
+      "docs/source/coding_guidelines.md",
+      "docs/source/commandline_tools.md",
+      "docs/source/CONTRIBUTING.md",
+      "docs/source/cpath_scripts.rst",
+      "docs/source/create_montage.rst",
+      "docs/source/datasets.md",
+      "docs/source/debugging.md",
+      "docs/source/developers.md",
+      "docs/source/diagnostics.md",
+      "docs/source/downloading.md",
+      "docs/source/dsa.md",
+      "docs/source/examples.md",
+      "docs/source/first_steps.md",
+      "docs/source/histopathology.md",
+      "docs/source/histoqc.md",
+      "docs/source/histo_workflow.md",
+      "docs/source/hyperparameter_search.md",
+      "docs/source/index.rst",
+      "docs/source/loading_images.md",
+      "docs/source/logging.md",
+      "docs/source/lowpriority.md",
+      "docs/source/montage_creation.md",
+      "docs/source/multimodal.md",
+      "docs/source/panda_model.md",
+      "docs/source/public_datasets.md",
+      "docs/source/runner.md",
+      "docs/source/self_supervised_models.md",
+      "docs/source/software_design_overview.md",
+      "docs/source/ssl_on_tile_dataset.md",
+      "docs/source/tcga_model.md",
+      "docs/source/whole_slide_images.md",
+      "docs/source/amulet/amulet_script.rst",
+      "docs/source/amulet/config.rst",
+      "docs/source/amulet/environment.rst",
+      "docs/source/api/api.rst"
+    ],
+    "config": [
+      ".pre-commit-config.yaml",
+      "pyrightconfig.json",
+      "docs/source/amulet/config.yml",
+      "hi-ml/.vscode/settings.json",
+      "hi-ml-azure/.vscode/settings.json",
+      "hi-ml-cpath/pyrightconfig.json",
+      "hi-ml-cpath/.vscode/settings.json",
+      "hi-ml-cpath/src/SSL/configs/cxr_linear_head_augmentations.yaml",
+      "hi-ml-cpath/src/SSL/configs/cxr_ssl_encoder_augmentations.yaml",
+      "hi-ml-multimodal/pyrightconfig.json",
+      "hi-ml-multimodal/.vscode/settings.json",
+      "new_project_template/pyrightconfig.json",
+      "new_project_template/.vscode/settings.json"
+    ]
+  },
+  "licence_class": "A",
+  "licence_id": "MIT",
+  "ship_policy": "MAY_SHIP_WITH_ANTICOMMONS_AND_ATTRIBUTION",
+  "licence_class_meaning": "Permissive. May ship inside Anticommons derivatives with attribution and licence notice retained.",
+  "wall_seconds": 311.0,
+  "check_summary": {
+    "01_loc_file_counts": "MEASURED",
+    "02_licence_detection": "MEASURED",
+    "03_dependency_scan": "MEASURED",
+    "04_sbom": "MEASURED",
+    "05_git_health": "MEASURED",
+    "06_security_config_owasp_llm_top10": "MEASURED",
+    "07_security_config_owasp_top10": "MEASURED",
+    "08_soc1": "MEASURED",
+    "09_soc2_typeii": "MEASURED",
+    "10_nist_ai_rmf": "MEASURED",
+    "11_nist_sp800_53": "MEASURED",
+    "12_nist_csf": "MEASURED",
+    "13_fedramp": "MEASURED",
+    "14_pci_dss": "MEASURED",
+    "15_iso27001": "MEASURED",
+    "16_mitre_attack_mapping": "MEASURED",
+    "17_ml_trl_readiness": "MEASURED",
+    "00_shape_k_graphrag": "PASS"
+  },
+  "failures": [],
+  "independent_facts": {
+    "total_files_in_tree": 502,
+    "total_loc": 50155,
+    "primary_language": "Python",
+    "head_sha": "b67c1d27c6b1",
+    "head_date": "2025-04-10T08:35:18+01:00",
+    "remote_url": "https://github.com/microsoft/hi-ml",
+    "sbom_components": 30,
+    "declared_packages": 1019,
+    "trl_level": 7,
+    "licence_file": "LICENSE",
+    "licence_sha256_16": "c2cfccb812fe4821"
+  },
+  "project_fingerprint_sha256": "fc777adada68e13b464354d1d16d327ca30b56e521ad313d391970dad409e9aa",
+  "fingerprint_note": "sha256 of this project's own measured body with its own name and category normalised out; identical fingerprints between two projects would mean templated data"
+}
