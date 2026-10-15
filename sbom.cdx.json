@@ -1,0 +1,2622 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:46273064-d4b7-5133-b2c6-9e5a093793f5",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T16:01:25Z",
+    "component": {
+      "type": "application",
+      "name": "HI_ML",
+      "version": "b67c1d27c6b1",
+      "bom-ref": "pkg:generic/anticloud/HI_ML@b67c1d27c6b1",
+      "purl": "pkg:generic/anticloud/HI_ML@b67c1d27c6b1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "b67c1d27c6b17d8e8ff01f8c507f3cabdb307388"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/microsoft/hi-ml"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "DO",
+      "version": "unspecified",
+      "purl": "pkg:generic/DO",
+      "bom-ref": "conda/DO@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "pytorch",
+      "version": "unspecified",
+      "purl": "pkg:generic/pytorch",
+      "bom-ref": "conda/pytorch@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "conda-forge",
+      "version": "unspecified",
+      "purl": "pkg:generic/conda-forge",
+      "bom-ref": "conda/conda-forge@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "defaults",
+      "version": "unspecified",
+      "purl": "pkg:generic/defaults",
+      "bom-ref": "conda/defaults@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "_libgcc_mutex",
+      "version": "0.1=conda_forge",
+      "purl": "pkg:generic/_libgcc_mutex@0.1=conda_forge",
+      "bom-ref": "conda/_libgcc_mutex@0.1=conda_forge"
+    },
+    {
+      "type": "library",
+      "name": "_openmp_mutex",
+      "version": "4.5=2_gnu",
+      "purl": "pkg:generic/_openmp_mutex@4.5=2_gnu",
+      "bom-ref": "conda/_openmp_mutex@4.5=2_gnu"
+    },
+    {
+      "type": "library",
+      "name": "blas",
+      "version": "2.16=mkl",
+      "purl": "pkg:generic/blas@2.16=mkl",
+      "bom-ref": "conda/blas@2.16=mkl"
+    },
+    {
+      "type": "library",
+      "name": "bzip2",
+      "version": "1.0.8=hd590300_5",
+      "purl": "pkg:generic/bzip2@1.0.8=hd590300_5",
+      "bom-ref": "conda/bzip2@1.0.8=hd590300_5"
+    },
+    {
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "2023.7.22=hbcca054_0",
+      "purl": "pkg:generic/ca-certificates@2023.7.22=hbcca054_0",
+      "bom-ref": "conda/ca-certificates@2023.7.22=hbcca054_0"
+    },
+    {
+      "type": "library",
+      "name": "cudatoolkit",
+      "version": "11.3.1=hb98b00a_12",
+      "purl": "pkg:generic/cudatoolkit@11.3.1=hb98b00a_12",
+      "bom-ref": "conda/cudatoolkit@11.3.1=hb98b00a_12"
+    },
+    {
+      "type": "library",
+      "name": "intel-openmp",
+      "version": "2023.1.0=hdb19cb5_46305",
+      "purl": "pkg:generic/intel-openmp@2023.1.0=hdb19cb5_46305",
+      "bom-ref": "conda/intel-openmp@2023.1.0=hdb19cb5_46305"
+    },
+    {
+      "type": "library",
+      "name": "ld_impl_linux-64",
+      "version": "2.40=h41732ed_0",
+      "purl": "pkg:generic/ld_impl_linux-64@2.40=h41732ed_0",
+      "bom-ref": "conda/ld_impl_linux-64@2.40=h41732ed_0"
+    },
+    {
+      "type": "library",
+      "name": "libblas",
+      "version": "3.8.0=16_mkl",
+      "purl": "pkg:generic/libblas@3.8.0=16_mkl",
+      "bom-ref": "conda/libblas@3.8.0=16_mkl"
+    },
+    {
+      "type": "library",
+      "name": "libcblas",
+      "version": "3.8.0=16_mkl",
+      "purl": "pkg:generic/libcblas@3.8.0=16_mkl",
+      "bom-ref": "conda/libcblas@3.8.0=16_mkl"
+    },
+    {
+      "type": "library",
+      "name": "libffi",
+      "version": "3.4.2=h7f98852_5",
+      "purl": "pkg:generic/libffi@3.4.2=h7f98852_5",
+      "bom-ref": "conda/libffi@3.4.2=h7f98852_5"
+    },
+    {
+      "type": "library",
+      "name": "libgcc-ng",
+      "version": "13.2.0=h807b86a_2",
+      "purl": "pkg:generic/libgcc-ng@13.2.0=h807b86a_2",
+      "bom-ref": "conda/libgcc-ng@13.2.0=h807b86a_2"
+    },
+    {
+      "type": "library",
+      "name": "libgfortran-ng",
+      "version": "7.5.0=h14aa051_20",
+      "purl": "pkg:generic/libgfortran-ng@7.5.0=h14aa051_20",
+      "bom-ref": "conda/libgfortran-ng@7.5.0=h14aa051_20"
+    },
+    {
+      "type": "library",
+      "name": "libgfortran4",
+      "version": "7.5.0=h14aa051_20",
+      "purl": "pkg:generic/libgfortran4@7.5.0=h14aa051_20",
+      "bom-ref": "conda/libgfortran4@7.5.0=h14aa051_20"
+    },
+    {
+      "type": "library",
+      "name": "libgomp",
+      "version": "13.2.0=h807b86a_2",
+      "purl": "pkg:generic/libgomp@13.2.0=h807b86a_2",
+      "bom-ref": "conda/libgomp@13.2.0=h807b86a_2"
+    },
+    {
+      "type": "library",
+      "name": "liblapack",
+      "version": "3.8.0=16_mkl",
+      "purl": "pkg:generic/liblapack@3.8.0=16_mkl",
+      "bom-ref": "conda/liblapack@3.8.0=16_mkl"
+    },
+    {
+      "type": "library",
+      "name": "liblapacke",
+      "version": "3.8.0=16_mkl",
+      "purl": "pkg:generic/liblapacke@3.8.0=16_mkl",
+      "bom-ref": "conda/liblapacke@3.8.0=16_mkl"
+    },
+    {
+      "type": "library",
+      "name": "libnsl",
+      "version": "2.0.1=hd590300_0",
+      "purl": "pkg:generic/libnsl@2.0.1=hd590300_0",
+      "bom-ref": "conda/libnsl@2.0.1=hd590300_0"
+    },
+    {
+      "type": "library",
+      "name": "libsqlite",
+      "version": "3.44.0=h2797004_0",
+      "purl": "pkg:generic/libsqlite@3.44.0=h2797004_0",
+      "bom-ref": "conda/libsqlite@3.44.0=h2797004_0"
+    },
+    {
+      "type": "library",
+      "name": "libstdcxx-ng",
+      "version": "13.2.0=h7e041cc_2",
+      "purl": "pkg:generic/libstdcxx-ng@13.2.0=h7e041cc_2",
+      "bom-ref": "conda/libstdcxx-ng@13.2.0=h7e041cc_2"
+    },
+    {
+      "type": "library",
+      "name": "libuuid",
+      "version": "2.38.1=h0b41bf4_0",
+      "purl": "pkg:generic/libuuid@2.38.1=h0b41bf4_0",
+      "bom-ref": "conda/libuuid@2.38.1=h0b41bf4_0"
+    },
+    {
+      "type": "library",
+      "name": "libuv",
+      "version": "1.46.0=hd590300_0",
+      "purl": "pkg:generic/libuv@1.46.0=hd590300_0",
+      "bom-ref": "conda/libuv@1.46.0=hd590300_0"
+    },
+    {
+      "type": "library",
+      "name": "libzlib",
+      "version": "1.2.13=hd590300_5",
+      "purl": "pkg:generic/libzlib@1.2.13=hd590300_5",
+      "bom-ref": "conda/libzlib@1.2.13=hd590300_5"
+    },
+    {
+      "type": "library",
+      "name": "mkl",
+      "version": "2020.2=256",
+      "purl": "pkg:generic/mkl@2020.2=256",
+      "bom-ref": "conda/mkl@2020.2=256"
+    },
+    {
+      "type": "library",
+      "name": "ncurses",
+      "version": "6.4=h59595ed_2",
+      "purl": "pkg:generic/ncurses@6.4=h59595ed_2",
+      "bom-ref": "conda/ncurses@6.4=h59595ed_2"
+    },
+    {
+      "type": "library",
+      "name": "openssl",
+      "version": "3.1.4=hd590300_0",
+      "purl": "pkg:generic/openssl@3.1.4=hd590300_0",
+      "bom-ref": "conda/openssl@3.1.4=hd590300_0"
+    },
+    {
+      "type": "library",
+      "name": "pip",
+      "version": "23.3.1=pyhd8ed1ab_0",
+      "purl": "pkg:generic/pip@23.3.1=pyhd8ed1ab_0",
+      "bom-ref": "conda/pip@23.3.1=pyhd8ed1ab_0"
+    },
+    {
+      "type": "library",
+      "name": "python",
+      "version": "3.9.18",
+      "purl": "pkg:generic/python@3.9.18",
+      "bom-ref": "conda/python@3.9.18"
+    },
+    {
+      "type": "library",
+      "name": "pytorch-mutex",
+      "version": "1.0=cuda",
+      "purl": "pkg:generic/pytorch-mutex@1.0=cuda",
+      "bom-ref": "conda/pytorch-mutex@1.0=cuda"
+    },
+    {
+      "type": "library",
+      "name": "readline",
+      "version": "8.2=h8228510_1",
+      "purl": "pkg:generic/readline@8.2=h8228510_1",
+      "bom-ref": "conda/readline@8.2=h8228510_1"
+    },
+    {
+      "type": "library",
+      "name": "setuptools",
+      "version": "68.2.2=pyhd8ed1ab_0",
+      "purl": "pkg:generic/setuptools@68.2.2=pyhd8ed1ab_0",
+      "bom-ref": "conda/setuptools@68.2.2=pyhd8ed1ab_0"
+    },
+    {
+      "type": "library",
+      "name": "tk",
+      "version": "8.6.13=noxft_h4845f30_101",
+      "purl": "pkg:generic/tk@8.6.13=noxft_h4845f30_101",
+      "bom-ref": "conda/tk@8.6.13=noxft_h4845f30_101"
+    },
+    {
+      "type": "library",
+      "name": "typing_extensions",
+      "version": "4.8.0=pyha770c72_0",
+      "purl": "pkg:generic/typing_extensions@4.8.0=pyha770c72_0",
+      "bom-ref": "conda/typing_extensions@4.8.0=pyha770c72_0"
+    },
+    {
+      "type": "library",
+      "name": "xz",
+      "version": "5.2.6=h166bdaf_0",
+      "purl": "pkg:generic/xz@5.2.6=h166bdaf_0",
+      "bom-ref": "conda/xz@5.2.6=h166bdaf_0"
+    },
+    {
+      "type": "library",
+      "name": "zlib",
+      "version": "1.2.13=hd590300_5",
+      "purl": "pkg:generic/zlib@1.2.13=hd590300_5",
+      "bom-ref": "conda/zlib@1.2.13=hd590300_5"
+    },
+    {
+      "type": "library",
+      "name": "absl-py",
+      "version": "2.0.0",
+      "purl": "pkg:generic/absl-py@2.0.0",
+      "bom-ref": "conda/absl-py@2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "adal",
+      "version": "1.2.7",
+      "purl": "pkg:generic/adal@1.2.7",
+      "bom-ref": "conda/adal@1.2.7"
+    },
+    {
+      "type": "library",
+      "name": "aiohttp",
+      "version": "3.8.6",
+      "purl": "pkg:generic/aiohttp@3.8.6",
+      "bom-ref": "conda/aiohttp@3.8.6"
+    },
+    {
+      "type": "library",
+      "name": "aiosignal",
+      "version": "1.3.1",
+      "purl": "pkg:generic/aiosignal@1.3.1",
+      "bom-ref": "conda/aiosignal@1.3.1"
+    },
+    {
+      "type": "library",
+      "name": "alabaster",
+      "version": "0.7.13",
+      "purl": "pkg:generic/alabaster@0.7.13",
+      "bom-ref": "conda/alabaster@0.7.13"
+    },
+    {
+      "type": "library",
+      "name": "alembic",
+      "version": "1.12.1",
+      "purl": "pkg:generic/alembic@1.12.1",
+      "bom-ref": "conda/alembic@1.12.1"
+    },
+    {
+      "type": "library",
+      "name": "applicationinsights",
+      "version": "0.11.10",
+      "purl": "pkg:generic/applicationinsights@0.11.10",
+      "bom-ref": "conda/applicationinsights@0.11.10"
+    },
+    {
+      "type": "library",
+      "name": "argcomplete",
+      "version": "2.1.2",
+      "purl": "pkg:generic/argcomplete@2.1.2",
+      "bom-ref": "conda/argcomplete@2.1.2"
+    },
+    {
+      "type": "library",
+      "name": "astroid",
+      "version": "2.15.8",
+      "purl": "pkg:generic/astroid@2.15.8",
+      "bom-ref": "conda/astroid@2.15.8"
+    },
+    {
+      "type": "library",
+      "name": "async-timeout",
+      "version": "4.0.3",
+      "purl": "pkg:generic/async-timeout@4.0.3",
+      "bom-ref": "conda/async-timeout@4.0.3"
+    },
+    {
+      "type": "library",
+      "name": "attrs",
+      "version": "21.4.0",
+      "purl": "pkg:generic/attrs@21.4.0",
+      "bom-ref": "conda/attrs@21.4.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-ai-ml",
+      "version": "1.11.1",
+      "purl": "pkg:generic/azure-ai-ml@1.11.1",
+      "bom-ref": "conda/azure-ai-ml@1.11.1"
+    },
+    {
+      "type": "library",
+      "name": "azure-common",
+      "version": "1.1.28",
+      "purl": "pkg:generic/azure-common@1.1.28",
+      "bom-ref": "conda/azure-common@1.1.28"
+    },
+    {
+      "type": "library",
+      "name": "azure-core",
+      "version": "1.29.5",
+      "purl": "pkg:generic/azure-core@1.29.5",
+      "bom-ref": "conda/azure-core@1.29.5"
+    },
+    {
+      "type": "library",
+      "name": "azure-graphrbac",
+      "version": "0.61.1",
+      "purl": "pkg:generic/azure-graphrbac@0.61.1",
+      "bom-ref": "conda/azure-graphrbac@0.61.1"
+    },
+    {
+      "type": "library",
+      "name": "azure-identity",
+      "version": "1.15.0",
+      "purl": "pkg:generic/azure-identity@1.15.0",
+      "bom-ref": "conda/azure-identity@1.15.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-mgmt-authorization",
+      "version": "3.0.0",
+      "purl": "pkg:generic/azure-mgmt-authorization@3.0.0",
+      "bom-ref": "conda/azure-mgmt-authorization@3.0.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-mgmt-containerregistry",
+      "version": "10.2.0",
+      "purl": "pkg:generic/azure-mgmt-containerregistry@10.2.0",
+      "bom-ref": "conda/azure-mgmt-containerregistry@10.2.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-mgmt-core",
+      "version": "1.4.0",
+      "purl": "pkg:generic/azure-mgmt-core@1.4.0",
+      "bom-ref": "conda/azure-mgmt-core@1.4.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-mgmt-keyvault",
+      "version": "10.3.0",
+      "purl": "pkg:generic/azure-mgmt-keyvault@10.3.0",
+      "bom-ref": "conda/azure-mgmt-keyvault@10.3.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-mgmt-network",
+      "version": "21.0.1",
+      "purl": "pkg:generic/azure-mgmt-network@21.0.1",
+      "bom-ref": "conda/azure-mgmt-network@21.0.1"
+    },
+    {
+      "type": "library",
+      "name": "azure-mgmt-resource",
+      "version": "22.0.0",
+      "purl": "pkg:generic/azure-mgmt-resource@22.0.0",
+      "bom-ref": "conda/azure-mgmt-resource@22.0.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-mgmt-storage",
+      "version": "21.0.0",
+      "purl": "pkg:generic/azure-mgmt-storage@21.0.0",
+      "bom-ref": "conda/azure-mgmt-storage@21.0.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-storage-blob",
+      "version": "12.10.0",
+      "purl": "pkg:generic/azure-storage-blob@12.10.0",
+      "bom-ref": "conda/azure-storage-blob@12.10.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-storage-file-datalake",
+      "version": "12.6.0",
+      "purl": "pkg:generic/azure-storage-file-datalake@12.6.0",
+      "bom-ref": "conda/azure-storage-file-datalake@12.6.0"
+    },
+    {
+      "type": "library",
+      "name": "azure-storage-file-share",
+      "version": "12.15.0",
+      "purl": "pkg:generic/azure-storage-file-share@12.15.0",
+      "bom-ref": "conda/azure-storage-file-share@12.15.0"
+    },
+    {
+      "type": "library",
+      "name": "azureml-core",
+      "version": "1.53.0",
+      "purl": "pkg:generic/azureml-core@1.53.0",
+      "bom-ref": "conda/azureml-core@1.53.0"
+    },
+    {
+      "type": "library",
+      "name": "azureml-dataprep",
+      "version": "4.12.7",
+      "purl": "pkg:generic/azureml-dataprep@4.12.7",
+      "bom-ref": "conda/azureml-dataprep@4.12.7"
+    },
+    {
+      "type": "library",
+      "name": "azureml-dataprep-native",
+      "version": "38.0.0",
+      "purl": "pkg:generic/azureml-dataprep-native@38.0.0",
+      "bom-ref": "conda/azureml-dataprep-native@38.0.0"
+    },
+    {
+      "type": "library",
+      "name": "azureml-dataprep-rslex",
+      "version": "2.19.6",
+      "purl": "pkg:generic/azureml-dataprep-rslex@2.19.6",
+      "bom-ref": "conda/azureml-dataprep-rslex@2.19.6"
+    },
+    {
+      "type": "library",
+      "name": "azureml-dataset-runtime",
+      "version": "1.53.0",
+      "purl": "pkg:generic/azureml-dataset-runtime@1.53.0",
+      "bom-ref": "conda/azureml-dataset-runtime@1.53.0"
+    },
+    {
+      "type": "library",
+      "name": "azureml-mlflow",
+      "version": "1.53.0",
+      "purl": "pkg:generic/azureml-mlflow@1.53.0",
+      "bom-ref": "conda/azureml-mlflow@1.53.0"
+    },
+    {
+      "type": "library",
+      "name": "azureml-telemetry",
+      "version": "1.53.0",
+      "purl": "pkg:generic/azureml-telemetry@1.53.0",
+      "bom-ref": "conda/azureml-telemetry@1.53.0"
+    },
+    {
+      "type": "library",
+      "name": "azureml-tensorboard",
+      "version": "1.53.0",
+      "purl": "pkg:generic/azureml-tensorboard@1.53.0",
+      "bom-ref": "conda/azureml-tensorboard@1.53.0"
+    },
+    {
+      "type": "library",
+      "name": "azureml-train-core",
+      "version": "1.53.0",
+      "purl": "pkg:generic/azureml-train-core@1.53.0",
+      "bom-ref": "conda/azureml-train-core@1.53.0"
+    },
+    {
+      "type": "library",
+      "name": "azureml-train-restclients-hyperdrive",
+      "version": "1.53.0",
+      "purl": "pkg:generic/azureml-train-restclients-hyperdrive@1.53.0",
+      "bom-ref": "conda/azureml-train-restclients-hyperdrive@1.53.0"
+    },
+    {
+      "type": "library",
+      "name": "babel",
+      "version": "2.13.1",
+      "purl": "pkg:generic/babel@2.13.1",
+      "bom-ref": "conda/babel@2.13.1"
+    },
+    {
+      "type": "library",
+      "name": "backports-tempfile",
+      "version": "1.0",
+      "purl": "pkg:generic/backports-tempfile@1.0",
+      "bom-ref": "conda/backports-tempfile@1.0"
+    },
+    {
+      "type": "library",
+      "name": "backports-weakref",
+      "version": "1.0.post1",
+      "purl": "pkg:generic/backports-weakref@1.0.post1",
+      "bom-ref": "conda/backports-weakref@1.0.post1"
+    },
+    {
+      "type": "library",
+      "name": "bcrypt",
+      "version": "4.0.1",
+      "purl": "pkg:generic/bcrypt@4.0.1",
+      "bom-ref": "conda/bcrypt@4.0.1"
+    },
+    {
+      "type": "library",
+      "name": "black",
+      "version": "23.1.0",
+      "purl": "pkg:generic/black@23.1.0",
+      "bom-ref": "conda/black@23.1.0"
+    },
+    {
+      "type": "library",
+      "name": "cachetools",
+      "version": "5.3.2",
+      "purl": "pkg:generic/cachetools@5.3.2",
+      "bom-ref": "conda/cachetools@5.3.2"
+    },
+    {
+      "type": "library",
+      "name": "certifi",
+      "version": "2023.7.22",
+      "purl": "pkg:generic/certifi@2023.7.22",
+      "bom-ref": "conda/certifi@2023.7.22"
+    },
+    {
+      "type": "library",
+      "name": "cffi",
+      "version": "1.16.0",
+      "purl": "pkg:generic/cffi@1.16.0",
+      "bom-ref": "conda/cffi@1.16.0"
+    },
+    {
+      "type": "library",
+      "name": "cfgv",
+      "version": "3.4.0",
+      "purl": "pkg:generic/cfgv@3.4.0",
+      "bom-ref": "conda/cfgv@3.4.0"
+    },
+    {
+      "type": "library",
+      "name": "charset-normalizer",
+      "version": "3.3.2",
+      "purl": "pkg:generic/charset-normalizer@3.3.2",
+      "bom-ref": "conda/charset-normalizer@3.3.2"
+    },
+    {
+      "type": "library",
+      "name": "click",
+      "version": "8.1.7",
+      "purl": "pkg:generic/click@8.1.7",
+      "bom-ref": "conda/click@8.1.7"
+    },
+    {
+      "type": "library",
+      "name": "cloudpickle",
+      "version": "2.2.1",
+      "purl": "pkg:generic/cloudpickle@2.2.1",
+      "bom-ref": "conda/cloudpickle@2.2.1"
+    },
+    {
+      "type": "library",
+      "name": "colorama",
+      "version": "0.4.6",
+      "purl": "pkg:generic/colorama@0.4.6",
+      "bom-ref": "conda/colorama@0.4.6"
+    },
+    {
+      "type": "library",
+      "name": "conda-merge",
+      "version": "0.2.0",
+      "purl": "pkg:generic/conda-merge@0.2.0",
+      "bom-ref": "conda/conda-merge@0.2.0"
+    },
+    {
+      "type": "library",
+      "name": "contextlib2",
+      "version": "21.6.0",
+      "purl": "pkg:generic/contextlib2@21.6.0",
+      "bom-ref": "conda/contextlib2@21.6.0"
+    },
+    {
+      "type": "library",
+      "name": "contourpy",
+      "version": "1.2.0",
+      "purl": "pkg:generic/contourpy@1.2.0",
+      "bom-ref": "conda/contourpy@1.2.0"
+    },
+    {
+      "type": "library",
+      "name": "coverage",
+      "version": "7.1.0",
+      "purl": "pkg:generic/coverage@7.1.0",
+      "bom-ref": "conda/coverage@7.1.0"
+    },
+    {
+      "type": "library",
+      "name": "cryptography",
+      "version": "41.0.5",
+      "purl": "pkg:generic/cryptography@41.0.5",
+      "bom-ref": "conda/cryptography@41.0.5"
+    },
+    {
+      "type": "library",
+      "name": "cycler",
+      "version": "0.12.1",
+      "purl": "pkg:generic/cycler@0.12.1",
+      "bom-ref": "conda/cycler@0.12.1"
+    },
+    {
+      "type": "library",
+      "name": "databricks-cli",
+      "version": "0.18.0",
+      "purl": "pkg:generic/databricks-cli@0.18.0",
+      "bom-ref": "conda/databricks-cli@0.18.0"
+    },
+    {
+      "type": "library",
+      "name": "dataclasses-json",
+      "version": "0.5.2",
+      "purl": "pkg:generic/dataclasses-json@0.5.2",
+      "bom-ref": "conda/dataclasses-json@0.5.2"
+    },
+    {
+      "type": "library",
+      "name": "dill",
+      "version": "0.3.7",
+      "purl": "pkg:generic/dill@0.3.7",
+      "bom-ref": "conda/dill@0.3.7"
+    },
+    {
+      "type": "library",
+      "name": "distlib",
+      "version": "0.3.7",
+      "purl": "pkg:generic/distlib@0.3.7",
+      "bom-ref": "conda/distlib@0.3.7"
+    },
+    {
+      "type": "library",
+      "name": "distro",
+      "version": "1.8.0",
+      "purl": "pkg:generic/distro@1.8.0",
+      "bom-ref": "conda/distro@1.8.0"
+    },
+    {
+      "type": "library",
+      "name": "docker",
+      "version": "6.1.3",
+      "purl": "pkg:generic/docker@6.1.3",
+      "bom-ref": "conda/docker@6.1.3"
+    },
+    {
+      "type": "library",
+      "name": "docutils",
+      "version": "0.16",
+      "purl": "pkg:generic/docutils@0.16",
+      "bom-ref": "conda/docutils@0.16"
+    },
+    {
+      "type": "library",
+      "name": "dotnetcore2",
+      "version": "3.1.23",
+      "purl": "pkg:generic/dotnetcore2@3.1.23",
+      "bom-ref": "conda/dotnetcore2@3.1.23"
+    },
+    {
+      "type": "library",
+      "name": "entrypoints",
+      "version": "0.4",
+      "purl": "pkg:generic/entrypoints@0.4",
+      "bom-ref": "conda/entrypoints@0.4"
+    },
+    {
+      "type": "library",
+      "name": "exceptiongroup",
+      "version": "1.1.3",
+      "purl": "pkg:generic/exceptiongroup@1.1.3",
+      "bom-ref": "conda/exceptiongroup@1.1.3"
+    },
+    {
+      "type": "library",
+      "name": "filelock",
+      "version": "3.13.1",
+      "purl": "pkg:generic/filelock@3.13.1",
+      "bom-ref": "conda/filelock@3.13.1"
+    },
+    {
+      "type": "library",
+      "name": "flake8",
+      "version": "6.1.0",
+      "purl": "pkg:generic/flake8@6.1.0",
+      "bom-ref": "conda/flake8@6.1.0"
+    },
+    {
+      "type": "library",
+      "name": "flake8-bugbear",
+      "version": "23.3.12",
+      "purl": "pkg:generic/flake8-bugbear@23.3.12",
+      "bom-ref": "conda/flake8-bugbear@23.3.12"
+    },
+    {
+      "type": "library",
+      "name": "flask",
+      "version": "2.2.5",
+      "purl": "pkg:generic/flask@2.2.5",
+      "bom-ref": "conda/flask@2.2.5"
+    },
+    {
+      "type": "library",
+      "name": "fonttools",
+      "version": "4.44.0",
+      "purl": "pkg:generic/fonttools@4.44.0",
+      "bom-ref": "conda/fonttools@4.44.0"
+    },
+    {
+      "type": "library",
+      "name": "frozenlist",
+      "version": "1.4.0",
+      "purl": "pkg:generic/frozenlist@1.4.0",
+      "bom-ref": "conda/frozenlist@1.4.0"
+    },
+    {
+      "type": "library",
+      "name": "fsspec",
+      "version": "2023.10.0",
+      "purl": "pkg:generic/fsspec@2023.10.0",
+      "bom-ref": "conda/fsspec@2023.10.0"
+    },
+    {
+      "type": "library",
+      "name": "fusepy",
+      "version": "3.0.1",
+      "purl": "pkg:generic/fusepy@3.0.1",
+      "bom-ref": "conda/fusepy@3.0.1"
+    },
+    {
+      "type": "library",
+      "name": "gitdb",
+      "version": "4.0.11",
+      "purl": "pkg:generic/gitdb@4.0.11",
+      "bom-ref": "conda/gitdb@4.0.11"
+    },
+    {
+      "type": "library",
+      "name": "gitpython",
+      "version": "3.1.40",
+      "purl": "pkg:generic/gitpython@3.1.40",
+      "bom-ref": "conda/gitpython@3.1.40"
+    },
+    {
+      "type": "library",
+      "name": "google-api-core",
+      "version": "2.13.0",
+      "purl": "pkg:generic/google-api-core@2.13.0",
+      "bom-ref": "conda/google-api-core@2.13.0"
+    },
+    {
+      "type": "library",
+      "name": "google-auth",
+      "version": "2.23.4",
+      "purl": "pkg:generic/google-auth@2.23.4",
+      "bom-ref": "conda/google-auth@2.23.4"
+    },
+    {
+      "type": "library",
+      "name": "google-auth-oauthlib",
+      "version": "1.1.0",
+      "purl": "pkg:generic/google-auth-oauthlib@1.1.0",
+      "bom-ref": "conda/google-auth-oauthlib@1.1.0"
+    },
+    {
+      "type": "library",
+      "name": "googleapis-common-protos",
+      "version": "1.61.0",
+      "purl": "pkg:generic/googleapis-common-protos@1.61.0",
+      "bom-ref": "conda/googleapis-common-protos@1.61.0"
+    },
+    {
+      "type": "library",
+      "name": "greenlet",
+      "version": "3.0.1",
+      "purl": "pkg:generic/greenlet@3.0.1",
+      "bom-ref": "conda/greenlet@3.0.1"
+    },
+    {
+      "type": "library",
+      "name": "grpcio",
+      "version": "1.59.2",
+      "purl": "pkg:generic/grpcio@1.59.2",
+      "bom-ref": "conda/grpcio@1.59.2"
+    },
+    {
+      "type": "library",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "purl": "pkg:generic/gunicorn@21.2.0",
+      "bom-ref": "conda/gunicorn@21.2.0"
+    },
+    {
+      "type": "library",
+      "name": "hi-ml-azure",
+      "version": "0.3.4",
+      "purl": "pkg:generic/hi-ml-azure@0.3.4",
+      "bom-ref": "conda/hi-ml-azure@0.3.4"
+    },
+    {
+      "type": "library",
+      "name": "humanfriendly",
+      "version": "10.0",
+      "purl": "pkg:generic/humanfriendly@10.0",
+      "bom-ref": "conda/humanfriendly@10.0"
+    },
+    {
+      "type": "library",
+      "name": "identify",
+      "version": "2.5.31",
+      "purl": "pkg:generic/identify@2.5.31",
+      "bom-ref": "conda/identify@2.5.31"
+    },
+    {
+      "type": "library",
+      "name": "idna",
+      "version": "3.4",
+      "purl": "pkg:generic/idna@3.4",
+      "bom-ref": "conda/idna@3.4"
+    },
+    {
+      "type": "library",
+      "name": "imagesize",
+      "version": "1.4.1",
+      "purl": "pkg:generic/imagesize@1.4.1",
+      "bom-ref": "conda/imagesize@1.4.1"
+    },
+    {
+      "type": "library",
+      "name": "importlib-metadata",
+      "version": "6.8.0",
+      "purl": "pkg:generic/importlib-metadata@6.8.0",
+      "bom-ref": "conda/importlib-metadata@6.8.0"
+    },
+    {
+      "type": "library",
+      "name": "importlib-resources",
+      "version": "6.1.1",
+      "purl": "pkg:generic/importlib-resources@6.1.1",
+      "bom-ref": "conda/importlib-resources@6.1.1"
+    },
+    {
+      "type": "library",
+      "name": "iniconfig",
+      "version": "2.0.0",
+      "purl": "pkg:generic/iniconfig@2.0.0",
+      "bom-ref": "conda/iniconfig@2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "isodate",
+      "version": "0.6.1",
+      "purl": "pkg:generic/isodate@0.6.1",
+      "bom-ref": "conda/isodate@0.6.1"
+    },
+    {
+      "type": "library",
+      "name": "isort",
+      "version": "5.12.0",
+      "purl": "pkg:generic/isort@5.12.0",
+      "bom-ref": "conda/isort@5.12.0"
+    },
+    {
+      "type": "library",
+      "name": "itsdangerous",
+      "version": "2.1.2",
+      "purl": "pkg:generic/itsdangerous@2.1.2",
+      "bom-ref": "conda/itsdangerous@2.1.2"
+    },
+    {
+      "type": "library",
+      "name": "jaraco-classes",
+      "version": "3.3.0",
+      "purl": "pkg:generic/jaraco-classes@3.3.0",
+      "bom-ref": "conda/jaraco-classes@3.3.0"
+    },
+    {
+      "type": "library",
+      "name": "jeepney",
+      "version": "0.8.0",
+      "purl": "pkg:generic/jeepney@0.8.0",
+      "bom-ref": "conda/jeepney@0.8.0"
+    },
+    {
+      "type": "library",
+      "name": "jinja2",
+      "version": "3.0.2",
+      "purl": "pkg:generic/jinja2@3.0.2",
+      "bom-ref": "conda/jinja2@3.0.2"
+    },
+    {
+      "type": "library",
+      "name": "jmespath",
+      "version": "1.0.1",
+      "purl": "pkg:generic/jmespath@1.0.1",
+      "bom-ref": "conda/jmespath@1.0.1"
+    },
+    {
+      "type": "library",
+      "name": "joblib",
+      "version": "1.3.2",
+      "purl": "pkg:generic/joblib@1.3.2",
+      "bom-ref": "conda/joblib@1.3.2"
+    },
+    {
+      "type": "library",
+      "name": "jsonpickle",
+      "version": "3.0.2",
+      "purl": "pkg:generic/jsonpickle@3.0.2",
+      "bom-ref": "conda/jsonpickle@3.0.2"
+    },
+    {
+      "type": "library",
+      "name": "jsonschema",
+      "version": "4.17.3",
+      "purl": "pkg:generic/jsonschema@4.17.3",
+      "bom-ref": "conda/jsonschema@4.17.3"
+    },
+    {
+      "type": "library",
+      "name": "keyring",
+      "version": "24.2.0",
+      "purl": "pkg:generic/keyring@24.2.0",
+      "bom-ref": "conda/keyring@24.2.0"
+    },
+    {
+      "type": "library",
+      "name": "kiwisolver",
+      "version": "1.4.5",
+      "purl": "pkg:generic/kiwisolver@1.4.5",
+      "bom-ref": "conda/kiwisolver@1.4.5"
+    },
+    {
+      "type": "library",
+      "name": "knack",
+      "version": "0.10.1",
+      "purl": "pkg:generic/knack@0.10.1",
+      "bom-ref": "conda/knack@0.10.1"
+    },
+    {
+      "type": "library",
+      "name": "lazy-object-proxy",
+      "version": "1.9.0",
+      "purl": "pkg:generic/lazy-object-proxy@1.9.0",
+      "bom-ref": "conda/lazy-object-proxy@1.9.0"
+    },
+    {
+      "type": "library",
+      "name": "lightning-utilities",
+      "version": "0.9.0",
+      "purl": "pkg:generic/lightning-utilities@0.9.0",
+      "bom-ref": "conda/lightning-utilities@0.9.0"
+    },
+    {
+      "type": "library",
+      "name": "lxml",
+      "version": "4.9.3",
+      "purl": "pkg:generic/lxml@4.9.3",
+      "bom-ref": "conda/lxml@4.9.3"
+    },
+    {
+      "type": "library",
+      "name": "mako",
+      "version": "1.2.4",
+      "purl": "pkg:generic/mako@1.2.4",
+      "bom-ref": "conda/mako@1.2.4"
+    },
+    {
+      "type": "library",
+      "name": "markdown",
+      "version": "3.5.1",
+      "purl": "pkg:generic/markdown@3.5.1",
+      "bom-ref": "conda/markdown@3.5.1"
+    },
+    {
+      "type": "library",
+      "name": "markdown-it-py",
+      "version": "1.1.0",
+      "purl": "pkg:generic/markdown-it-py@1.1.0",
+      "bom-ref": "conda/markdown-it-py@1.1.0"
+    },
+    {
+      "type": "library",
+      "name": "markupsafe",
+      "version": "2.1.3",
+      "purl": "pkg:generic/markupsafe@2.1.3",
+      "bom-ref": "conda/markupsafe@2.1.3"
+    },
+    {
+      "type": "library",
+      "name": "marshmallow",
+      "version": "3.20.1",
+      "purl": "pkg:generic/marshmallow@3.20.1",
+      "bom-ref": "conda/marshmallow@3.20.1"
+    },
+    {
+      "type": "library",
+      "name": "marshmallow-enum",
+      "version": "1.5.1",
+      "purl": "pkg:generic/marshmallow-enum@1.5.1",
+      "bom-ref": "conda/marshmallow-enum@1.5.1"
+    },
+    {
+      "type": "library",
+      "name": "matplotlib",
+      "version": "3.8.1",
+      "purl": "pkg:generic/matplotlib@3.8.1",
+      "bom-ref": "conda/matplotlib@3.8.1"
+    },
+    {
+      "type": "library",
+      "name": "mccabe",
+      "version": "0.7.0",
+      "purl": "pkg:generic/mccabe@0.7.0",
+      "bom-ref": "conda/mccabe@0.7.0"
+    },
+    {
+      "type": "library",
+      "name": "mdit-py-plugins",
+      "version": "0.2.8",
+      "purl": "pkg:generic/mdit-py-plugins@0.2.8",
+      "bom-ref": "conda/mdit-py-plugins@0.2.8"
+    },
+    {
+      "type": "library",
+      "name": "mlflow",
+      "version": "2.8.0",
+      "purl": "pkg:generic/mlflow@2.8.0",
+      "bom-ref": "conda/mlflow@2.8.0"
+    },
+    {
+      "type": "library",
+      "name": "mlflow-skinny",
+      "version": "2.8.0",
+      "purl": "pkg:generic/mlflow-skinny@2.8.0",
+      "bom-ref": "conda/mlflow-skinny@2.8.0"
+    },
+    {
+      "type": "library",
+      "name": "more-itertools",
+      "version": "10.1.0",
+      "purl": "pkg:generic/more-itertools@10.1.0",
+      "bom-ref": "conda/more-itertools@10.1.0"
+    },
+    {
+      "type": "library",
+      "name": "msal",
+      "version": "1.25.0",
+      "purl": "pkg:generic/msal@1.25.0",
+      "bom-ref": "conda/msal@1.25.0"
+    },
+    {
+      "type": "library",
+      "name": "msal-extensions",
+      "version": "1.0.0",
+      "purl": "pkg:generic/msal-extensions@1.0.0",
+      "bom-ref": "conda/msal-extensions@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "msrest",
+      "version": "0.7.1",
+      "purl": "pkg:generic/msrest@0.7.1",
+      "bom-ref": "conda/msrest@0.7.1"
+    },
+    {
+      "type": "library",
+      "name": "msrestazure",
+      "version": "0.6.4",
+      "purl": "pkg:generic/msrestazure@0.6.4",
+      "bom-ref": "conda/msrestazure@0.6.4"
+    },
+    {
+      "type": "library",
+      "name": "multidict",
+      "version": "6.0.4",
+      "purl": "pkg:generic/multidict@6.0.4",
+      "bom-ref": "conda/multidict@6.0.4"
+    },
+    {
+      "type": "library",
+      "name": "mypy",
+      "version": "1.0.1",
+      "purl": "pkg:generic/mypy@1.0.1",
+      "bom-ref": "conda/mypy@1.0.1"
+    },
+    {
+      "type": "library",
+      "name": "mypy-extensions",
+      "version": "1.0.0",
+      "purl": "pkg:generic/mypy-extensions@1.0.0",
+      "bom-ref": "conda/mypy-extensions@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "myst-parser",
+      "version": "0.15.2",
+      "purl": "pkg:generic/myst-parser@0.15.2",
+      "bom-ref": "conda/myst-parser@0.15.2"
+    },
+    {
+      "type": "library",
+      "name": "ndg-httpsclient",
+      "version": "0.5.1",
+      "purl": "pkg:generic/ndg-httpsclient@0.5.1",
+      "bom-ref": "conda/ndg-httpsclient@0.5.1"
+    },
+    {
+      "type": "library",
+      "name": "nh3",
+      "version": "0.2.14",
+      "purl": "pkg:generic/nh3@0.2.14",
+      "bom-ref": "conda/nh3@0.2.14"
+    },
+    {
+      "type": "library",
+      "name": "nodeenv",
+      "version": "1.8.0",
+      "purl": "pkg:generic/nodeenv@1.8.0",
+      "bom-ref": "conda/nodeenv@1.8.0"
+    },
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": "1.23.5",
+      "purl": "pkg:generic/numpy@1.23.5",
+      "bom-ref": "conda/numpy@1.23.5"
+    },
+    {
+      "type": "library",
+      "name": "nvidia-cublas-cu11",
+      "version": "11.10.3.66",
+      "purl": "pkg:generic/nvidia-cublas-cu11@11.10.3.66",
+      "bom-ref": "conda/nvidia-cublas-cu11@11.10.3.66"
+    },
+    {
+      "type": "library",
+      "name": "nvidia-cuda-nvrtc-cu11",
+      "version": "11.7.99",
+      "purl": "pkg:generic/nvidia-cuda-nvrtc-cu11@11.7.99",
+      "bom-ref": "conda/nvidia-cuda-nvrtc-cu11@11.7.99"
+    },
+    {
+      "type": "library",
+      "name": "nvidia-cuda-runtime-cu11",
+      "version": "11.7.99",
+      "purl": "pkg:generic/nvidia-cuda-runtime-cu11@11.7.99",
+      "bom-ref": "conda/nvidia-cuda-runtime-cu11@11.7.99"
+    },
+    {
+      "type": "library",
+      "name": "nvidia-cudnn-cu11",
+      "version": "8.5.0.96",
+      "purl": "pkg:generic/nvidia-cudnn-cu11@8.5.0.96",
+      "bom-ref": "conda/nvidia-cudnn-cu11@8.5.0.96"
+    },
+    {
+      "type": "library",
+      "name": "oauthlib",
+      "version": "3.2.2",
+      "purl": "pkg:generic/oauthlib@3.2.2",
+      "bom-ref": "conda/oauthlib@3.2.2"
+    },
+    {
+      "type": "library",
+      "name": "opencensus",
+      "version": "0.11.3",
+      "purl": "pkg:generic/opencensus@0.11.3",
+      "bom-ref": "conda/opencensus@0.11.3"
+    },
+    {
+      "type": "library",
+      "name": "opencensus-context",
+      "version": "0.1.3",
+      "purl": "pkg:generic/opencensus-context@0.1.3",
+      "bom-ref": "conda/opencensus-context@0.1.3"
+    },
+    {
+      "type": "library",
+      "name": "opencensus-ext-azure",
+      "version": "1.1.11",
+      "purl": "pkg:generic/opencensus-ext-azure@1.1.11",
+      "bom-ref": "conda/opencensus-ext-azure@1.1.11"
+    },
+    {
+      "type": "library",
+      "name": "opencv-python-headless",
+      "version": "4.8.1.78",
+      "purl": "pkg:generic/opencv-python-headless@4.8.1.78",
+      "bom-ref": "conda/opencv-python-headless@4.8.1.78"
+    },
+    {
+      "type": "library",
+      "name": "packaging",
+      "version": "23.0",
+      "purl": "pkg:generic/packaging@23.0",
+      "bom-ref": "conda/packaging@23.0"
+    },
+    {
+      "type": "library",
+      "name": "pandas",
+      "version": "2.1.2",
+      "purl": "pkg:generic/pandas@2.1.2",
+      "bom-ref": "conda/pandas@2.1.2"
+    },
+    {
+      "type": "library",
+      "name": "param",
+      "version": "1.13.0",
+      "purl": "pkg:generic/param@1.13.0",
+      "bom-ref": "conda/param@1.13.0"
+    },
+    {
+      "type": "library",
+      "name": "paramiko",
+      "version": "3.3.1",
+      "purl": "pkg:generic/paramiko@3.3.1",
+      "bom-ref": "conda/paramiko@3.3.1"
+    },
+    {
+      "type": "library",
+      "name": "pathspec",
+      "version": "0.11.2",
+      "purl": "pkg:generic/pathspec@0.11.2",
+      "bom-ref": "conda/pathspec@0.11.2"
+    },
+    {
+      "type": "library",
+      "name": "pillow",
+      "version": "10.0.1",
+      "purl": "pkg:generic/pillow@10.0.1",
+      "bom-ref": "conda/pillow@10.0.1"
+    },
+    {
+      "type": "library",
+      "name": "pkginfo",
+      "version": "1.9.6",
+      "purl": "pkg:generic/pkginfo@1.9.6",
+      "bom-ref": "conda/pkginfo@1.9.6"
+    },
+    {
+      "type": "library",
+      "name": "platformdirs",
+      "version": "3.11.0",
+      "purl": "pkg:generic/platformdirs@3.11.0",
+      "bom-ref": "conda/platformdirs@3.11.0"
+    },
+    {
+      "type": "library",
+      "name": "pluggy",
+      "version": "1.3.0",
+      "purl": "pkg:generic/pluggy@1.3.0",
+      "bom-ref": "conda/pluggy@1.3.0"
+    },
+    {
+      "type": "library",
+      "name": "portalocker",
+      "version": "2.8.2",
+      "purl": "pkg:generic/portalocker@2.8.2",
+      "bom-ref": "conda/portalocker@2.8.2"
+    },
+    {
+      "type": "library",
+      "name": "pre-commit",
+      "version": "2.21.0",
+      "purl": "pkg:generic/pre-commit@2.21.0",
+      "bom-ref": "conda/pre-commit@2.21.0"
+    },
+    {
+      "type": "library",
+      "name": "protobuf",
+      "version": "3.19.6",
+      "purl": "pkg:generic/protobuf@3.19.6",
+      "bom-ref": "conda/protobuf@3.19.6"
+    },
+    {
+      "type": "library",
+      "name": "psutil",
+      "version": "5.9.6",
+      "purl": "pkg:generic/psutil@5.9.6",
+      "bom-ref": "conda/psutil@5.9.6"
+    },
+    {
+      "type": "library",
+      "name": "pyarrow",
+      "version": "11.0.0",
+      "purl": "pkg:generic/pyarrow@11.0.0",
+      "bom-ref": "conda/pyarrow@11.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pyasn1",
+      "version": "0.5.0",
+      "purl": "pkg:generic/pyasn1@0.5.0",
+      "bom-ref": "conda/pyasn1@0.5.0"
+    },
+    {
+      "type": "library",
+      "name": "pyasn1-modules",
+      "version": "0.3.0",
+      "purl": "pkg:generic/pyasn1-modules@0.3.0",
+      "bom-ref": "conda/pyasn1-modules@0.3.0"
+    },
+    {
+      "type": "library",
+      "name": "pycobertura",
+      "version": "3.0.0",
+      "purl": "pkg:generic/pycobertura@3.0.0",
+      "bom-ref": "conda/pycobertura@3.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pycodestyle",
+      "version": "2.11.1",
+      "purl": "pkg:generic/pycodestyle@2.11.1",
+      "bom-ref": "conda/pycodestyle@2.11.1"
+    },
+    {
+      "type": "library",
+      "name": "pycparser",
+      "version": "2.21",
+      "purl": "pkg:generic/pycparser@2.21",
+      "bom-ref": "conda/pycparser@2.21"
+    },
+    {
+      "type": "library",
+      "name": "pydash",
+      "version": "7.0.5",
+      "purl": "pkg:generic/pydash@7.0.5",
+      "bom-ref": "conda/pydash@7.0.5"
+    },
+    {
+      "type": "library",
+      "name": "pydeprecate",
+      "version": "0.3.2",
+      "purl": "pkg:generic/pydeprecate@0.3.2",
+      "bom-ref": "conda/pydeprecate@0.3.2"
+    },
+    {
+      "type": "library",
+      "name": "pyflakes",
+      "version": "3.1.0",
+      "purl": "pkg:generic/pyflakes@3.1.0",
+      "bom-ref": "conda/pyflakes@3.1.0"
+    },
+    {
+      "type": "library",
+      "name": "pygments",
+      "version": "2.16.1",
+      "purl": "pkg:generic/pygments@2.16.1",
+      "bom-ref": "conda/pygments@2.16.1"
+    },
+    {
+      "type": "library",
+      "name": "pyjwt",
+      "version": "2.8.0",
+      "purl": "pkg:generic/pyjwt@2.8.0",
+      "bom-ref": "conda/pyjwt@2.8.0"
+    },
+    {
+      "type": "library",
+      "name": "pylint",
+      "version": "2.16.2",
+      "purl": "pkg:generic/pylint@2.16.2",
+      "bom-ref": "conda/pylint@2.16.2"
+    },
+    {
+      "type": "library",
+      "name": "pynacl",
+      "version": "1.5.0",
+      "purl": "pkg:generic/pynacl@1.5.0",
+      "bom-ref": "conda/pynacl@1.5.0"
+    },
+    {
+      "type": "library",
+      "name": "pyopenssl",
+      "version": "23.3.0",
+      "purl": "pkg:generic/pyopenssl@23.3.0",
+      "bom-ref": "conda/pyopenssl@23.3.0"
+    },
+    {
+      "type": "library",
+      "name": "pyparsing",
+      "version": "3.1.1",
+      "purl": "pkg:generic/pyparsing@3.1.1",
+      "bom-ref": "conda/pyparsing@3.1.1"
+    },
+    {
+      "type": "library",
+      "name": "pyrsistent",
+      "version": "0.20.0",
+      "purl": "pkg:generic/pyrsistent@0.20.0",
+      "bom-ref": "conda/pyrsistent@0.20.0"
+    },
+    {
+      "type": "library",
+      "name": "pysocks",
+      "version": "1.7.1",
+      "purl": "pkg:generic/pysocks@1.7.1",
+      "bom-ref": "conda/pysocks@1.7.1"
+    },
+    {
+      "type": "library",
+      "name": "pytest",
+      "version": "7.2.1",
+      "purl": "pkg:generic/pytest@7.2.1",
+      "bom-ref": "conda/pytest@7.2.1"
+    },
+    {
+      "type": "library",
+      "name": "pytest-cov",
+      "version": "4.0.0",
+      "purl": "pkg:generic/pytest-cov@4.0.0",
+      "bom-ref": "conda/pytest-cov@4.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pytest-rerunfailures",
+      "version": "11.1.1",
+      "purl": "pkg:generic/pytest-rerunfailures@11.1.1",
+      "bom-ref": "conda/pytest-rerunfailures@11.1.1"
+    },
+    {
+      "type": "library",
+      "name": "pytest-timeout",
+      "version": "2.1.0",
+      "purl": "pkg:generic/pytest-timeout@2.1.0",
+      "bom-ref": "conda/pytest-timeout@2.1.0"
+    },
+    {
+      "type": "library",
+      "name": "python-dateutil",
+      "version": "2.8.2",
+      "purl": "pkg:generic/python-dateutil@2.8.2",
+      "bom-ref": "conda/python-dateutil@2.8.2"
+    },
+    {
+      "type": "library",
+      "name": "pytorch-lightning",
+      "version": "1.6.5",
+      "purl": "pkg:generic/pytorch-lightning@1.6.5",
+      "bom-ref": "conda/pytorch-lightning@1.6.5"
+    },
+    {
+      "type": "library",
+      "name": "pytz",
+      "version": "2023.3.post1",
+      "purl": "pkg:generic/pytz@2023.3.post1",
+      "bom-ref": "conda/pytz@2023.3.post1"
+    },
+    {
+      "type": "library",
+      "name": "pyyaml",
+      "version": "6.0.1",
+      "purl": "pkg:generic/pyyaml@6.0.1",
+      "bom-ref": "conda/pyyaml@6.0.1"
+    },
+    {
+      "type": "library",
+      "name": "querystring-parser",
+      "version": "1.2.4",
+      "purl": "pkg:generic/querystring-parser@1.2.4",
+      "bom-ref": "conda/querystring-parser@1.2.4"
+    },
+    {
+      "type": "library",
+      "name": "readme-renderer",
+      "version": "42.0",
+      "purl": "pkg:generic/readme-renderer@42.0",
+      "bom-ref": "conda/readme-renderer@42.0"
+    },
+    {
+      "type": "library",
+      "name": "requests",
+      "version": "2.31.0",
+      "purl": "pkg:generic/requests@2.31.0",
+      "bom-ref": "conda/requests@2.31.0"
+    },
+    {
+      "type": "library",
+      "name": "requests-oauthlib",
+      "version": "1.3.1",
+      "purl": "pkg:generic/requests-oauthlib@1.3.1",
+      "bom-ref": "conda/requests-oauthlib@1.3.1"
+    },
+    {
+      "type": "library",
+      "name": "requests-toolbelt",
+      "version": "1.0.0",
+      "purl": "pkg:generic/requests-toolbelt@1.0.0",
+      "bom-ref": "conda/requests-toolbelt@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "rfc3986",
+      "version": "2.0.0",
+      "purl": "pkg:generic/rfc3986@2.0.0",
+      "bom-ref": "conda/rfc3986@2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "rpdb",
+      "version": "0.1.6",
+      "purl": "pkg:generic/rpdb@0.1.6",
+      "bom-ref": "conda/rpdb@0.1.6"
+    },
+    {
+      "type": "library",
+      "name": "rsa",
+      "version": "4.9",
+      "purl": "pkg:generic/rsa@4.9",
+      "bom-ref": "conda/rsa@4.9"
+    },
+    {
+      "type": "library",
+      "name": "ruamel-yaml",
+      "version": "0.18.5",
+      "purl": "pkg:generic/ruamel-yaml@0.18.5",
+      "bom-ref": "conda/ruamel-yaml@0.18.5"
+    },
+    {
+      "type": "library",
+      "name": "ruamel-yaml-clib",
+      "version": "0.2.8",
+      "purl": "pkg:generic/ruamel-yaml-clib@0.2.8",
+      "bom-ref": "conda/ruamel-yaml-clib@0.2.8"
+    },
+    {
+      "type": "library",
+      "name": "scikit-learn",
+      "version": "1.3.2",
+      "purl": "pkg:generic/scikit-learn@1.3.2",
+      "bom-ref": "conda/scikit-learn@1.3.2"
+    },
+    {
+      "type": "library",
+      "name": "scipy",
+      "version": "1.11.3",
+      "purl": "pkg:generic/scipy@1.11.3",
+      "bom-ref": "conda/scipy@1.11.3"
+    },
+    {
+      "type": "library",
+      "name": "secretstorage",
+      "version": "3.3.3",
+      "purl": "pkg:generic/secretstorage@3.3.3",
+      "bom-ref": "conda/secretstorage@3.3.3"
+    },
+    {
+      "type": "library",
+      "name": "six",
+      "version": "1.16.0",
+      "purl": "pkg:generic/six@1.16.0",
+      "bom-ref": "conda/six@1.16.0"
+    },
+    {
+      "type": "library",
+      "name": "smmap",
+      "version": "5.0.1",
+      "purl": "pkg:generic/smmap@5.0.1",
+      "bom-ref": "conda/smmap@5.0.1"
+    },
+    {
+      "type": "library",
+      "name": "snowballstemmer",
+      "version": "2.2.0",
+      "purl": "pkg:generic/snowballstemmer@2.2.0",
+      "bom-ref": "conda/snowballstemmer@2.2.0"
+    },
+    {
+      "type": "library",
+      "name": "sphinx",
+      "version": "4.1.2",
+      "purl": "pkg:generic/sphinx@4.1.2",
+      "bom-ref": "conda/sphinx@4.1.2"
+    },
+    {
+      "type": "library",
+      "name": "sphinx-argparse",
+      "version": "0.3.1",
+      "purl": "pkg:generic/sphinx-argparse@0.3.1",
+      "bom-ref": "conda/sphinx-argparse@0.3.1"
+    },
+    {
+      "type": "library",
+      "name": "sphinx-autodoc-typehints",
+      "version": "1.12.0",
+      "purl": "pkg:generic/sphinx-autodoc-typehints@1.12.0",
+      "bom-ref": "conda/sphinx-autodoc-typehints@1.12.0"
+    },
+    {
+      "type": "library",
+      "name": "sphinx-automodapi",
+      "version": "0.13",
+      "purl": "pkg:generic/sphinx-automodapi@0.13",
+      "bom-ref": "conda/sphinx-automodapi@0.13"
+    },
+    {
+      "type": "library",
+      "name": "sphinx-rtd-theme",
+      "version": "1.0.0",
+      "purl": "pkg:generic/sphinx-rtd-theme@1.0.0",
+      "bom-ref": "conda/sphinx-rtd-theme@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "sphinxcontrib-applehelp",
+      "version": "1.0.4",
+      "purl": "pkg:generic/sphinxcontrib-applehelp@1.0.4",
+      "bom-ref": "conda/sphinxcontrib-applehelp@1.0.4"
+    },
+    {
+      "type": "library",
+      "name": "sphinxcontrib-devhelp",
+      "version": "1.0.2",
+      "purl": "pkg:generic/sphinxcontrib-devhelp@1.0.2",
+      "bom-ref": "conda/sphinxcontrib-devhelp@1.0.2"
+    },
+    {
+      "type": "library",
+      "name": "sphinxcontrib-htmlhelp",
+      "version": "2.0.1",
+      "purl": "pkg:generic/sphinxcontrib-htmlhelp@2.0.1",
+      "bom-ref": "conda/sphinxcontrib-htmlhelp@2.0.1"
+    },
+    {
+      "type": "library",
+      "name": "sphinxcontrib-jsmath",
+      "version": "1.0.1",
+      "purl": "pkg:generic/sphinxcontrib-jsmath@1.0.1",
+      "bom-ref": "conda/sphinxcontrib-jsmath@1.0.1"
+    },
+    {
+      "type": "library",
+      "name": "sphinxcontrib-qthelp",
+      "version": "1.0.3",
+      "purl": "pkg:generic/sphinxcontrib-qthelp@1.0.3",
+      "bom-ref": "conda/sphinxcontrib-qthelp@1.0.3"
+    },
+    {
+      "type": "library",
+      "name": "sphinxcontrib-serializinghtml",
+      "version": "1.1.5",
+      "purl": "pkg:generic/sphinxcontrib-serializinghtml@1.1.5",
+      "bom-ref": "conda/sphinxcontrib-serializinghtml@1.1.5"
+    },
+    {
+      "type": "library",
+      "name": "sqlalchemy",
+      "version": "2.0.23",
+      "purl": "pkg:generic/sqlalchemy@2.0.23",
+      "bom-ref": "conda/sqlalchemy@2.0.23"
+    },
+    {
+      "type": "library",
+      "name": "sqlparse",
+      "version": "0.4.4",
+      "purl": "pkg:generic/sqlparse@0.4.4",
+      "bom-ref": "conda/sqlparse@0.4.4"
+    },
+    {
+      "type": "library",
+      "name": "strictyaml",
+      "version": "1.7.3",
+      "purl": "pkg:generic/strictyaml@1.7.3",
+      "bom-ref": "conda/strictyaml@1.7.3"
+    },
+    {
+      "type": "library",
+      "name": "stringcase",
+      "version": "1.2.0",
+      "purl": "pkg:generic/stringcase@1.2.0",
+      "bom-ref": "conda/stringcase@1.2.0"
+    },
+    {
+      "type": "library",
+      "name": "tabulate",
+      "version": "0.9.0",
+      "purl": "pkg:generic/tabulate@0.9.0",
+      "bom-ref": "conda/tabulate@0.9.0"
+    },
+    {
+      "type": "library",
+      "name": "tensorboard",
+      "version": "2.15.1",
+      "purl": "pkg:generic/tensorboard@2.15.1",
+      "bom-ref": "conda/tensorboard@2.15.1"
+    },
+    {
+      "type": "library",
+      "name": "tensorboard-data-server",
+      "version": "0.7.2",
+      "purl": "pkg:generic/tensorboard-data-server@0.7.2",
+      "bom-ref": "conda/tensorboard-data-server@0.7.2"
+    },
+    {
+      "type": "library",
+      "name": "threadpoolctl",
+      "version": "3.2.0",
+      "purl": "pkg:generic/threadpoolctl@3.2.0",
+      "bom-ref": "conda/threadpoolctl@3.2.0"
+    },
+    {
+      "type": "library",
+      "name": "tomli",
+      "version": "2.0.1",
+      "purl": "pkg:generic/tomli@2.0.1",
+      "bom-ref": "conda/tomli@2.0.1"
+    },
+    {
+      "type": "library",
+      "name": "tomlkit",
+      "version": "0.12.2",
+      "purl": "pkg:generic/tomlkit@0.12.2",
+      "bom-ref": "conda/tomlkit@0.12.2"
+    },
+    {
+      "type": "library",
+      "name": "torch",
+      "version": "1.13.1",
+      "purl": "pkg:generic/torch@1.13.1",
+      "bom-ref": "conda/torch@1.13.1"
+    },
+    {
+      "type": "library",
+      "name": "torchmetrics",
+      "version": "1.2.0",
+      "purl": "pkg:generic/torchmetrics@1.2.0",
+      "bom-ref": "conda/torchmetrics@1.2.0"
+    },
+    {
+      "type": "library",
+      "name": "torchvision",
+      "version": "0.14.1",
+      "purl": "pkg:generic/torchvision@0.14.1",
+      "bom-ref": "conda/torchvision@0.14.1"
+    },
+    {
+      "type": "library",
+      "name": "tqdm",
+      "version": "4.66.1",
+      "purl": "pkg:generic/tqdm@4.66.1",
+      "bom-ref": "conda/tqdm@4.66.1"
+    },
+    {
+      "type": "library",
+      "name": "twine",
+      "version": "3.3.0",
+      "purl": "pkg:generic/twine@3.3.0",
+      "bom-ref": "conda/twine@3.3.0"
+    },
+    {
+      "type": "library",
+      "name": "typing-inspect",
+      "version": "0.9.0",
+      "purl": "pkg:generic/typing-inspect@0.9.0",
+      "bom-ref": "conda/typing-inspect@0.9.0"
+    },
+    {
+      "type": "library",
+      "name": "tzdata",
+      "version": "2023.3",
+      "purl": "pkg:generic/tzdata@2023.3",
+      "bom-ref": "conda/tzdata@2023.3"
+    },
+    {
+      "type": "library",
+      "name": "urllib3",
+      "version": "1.26.18",
+      "purl": "pkg:generic/urllib3@1.26.18",
+      "bom-ref": "conda/urllib3@1.26.18"
+    },
+    {
+      "type": "library",
+      "name": "virtualenv",
+      "version": "20.24.6",
+      "purl": "pkg:generic/virtualenv@20.24.6",
+      "bom-ref": "conda/virtualenv@20.24.6"
+    },
+    {
+      "type": "library",
+      "name": "websocket-client",
+      "version": "1.6.4",
+      "purl": "pkg:generic/websocket-client@1.6.4",
+      "bom-ref": "conda/websocket-client@1.6.4"
+    },
+    {
+      "type": "library",
+      "name": "werkzeug",
+      "version": "3.0.1",
+      "purl": "pkg:generic/werkzeug@3.0.1",
+      "bom-ref": "conda/werkzeug@3.0.1"
+    },
+    {
+      "type": "library",
+      "name": "wheel",
+      "version": "0.38.1",
+      "purl": "pkg:generic/wheel@0.38.1",
+      "bom-ref": "conda/wheel@0.38.1"
+    },
+    {
+      "type": "library",
+      "name": "wrapt",
+      "version": "1.15.0",
+      "purl": "pkg:generic/wrapt@1.15.0",
+      "bom-ref": "conda/wrapt@1.15.0"
+    },
+    {
+      "type": "library",
+      "name": "yarl",
+      "version": "1.9.2",
+      "purl": "pkg:generic/yarl@1.9.2",
+      "bom-ref": "conda/yarl@1.9.2"
+    },
+    {
+      "type": "library",
+      "name": "zipp",
+      "version": "3.17.0",
+      "purl": "pkg:generic/zipp@3.17.0",
+      "bom-ref": "conda/zipp@3.17.0"
+    },
+    {
+      "type": "library",
+      "name": "himl-runner",
+      "version": "= health_ml.runner:main",
+      "purl": "pkg:pypi/himl-runner@health_ml.runner:main",
+      "bom-ref": "pypi/himl-runner@= health_ml.runner:main"
+    },
+    {
+      "type": "library",
+      "name": "line_profiler",
+      "version": "3.3.1",
+      "purl": "pkg:generic/line_profiler@3.3.1",
+      "bom-ref": "conda/line_profiler@3.3.1"
+    },
+    {
+      "type": "library",
+      "name": "monai",
+      "version": "unspecified",
+      "purl": "pkg:generic/monai",
+      "bom-ref": "conda/monai@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "simpleitk",
+      "version": "1.2.4",
+      "purl": "pkg:generic/simpleitk@1.2.4",
+      "bom-ref": "conda/simpleitk@1.2.4"
+    },
+    {
+      "type": "library",
+      "name": "basic",
+      "version": "unspecified",
+      "purl": "pkg:generic/basic",
+      "bom-ref": "conda/basic@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "azure",
+      "version": "unspecified",
+      "purl": "pkg:generic/azure",
+      "bom-ref": "conda/azure@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "sqlite",
+      "version": "3.41.2=h5eee18b_0",
+      "purl": "pkg:generic/sqlite@3.41.2=h5eee18b_0",
+      "bom-ref": "conda/sqlite@3.41.2=h5eee18b_0"
+    },
+    {
+      "type": "library",
+      "name": "blinker",
+      "version": "1.7.0",
+      "purl": "pkg:generic/blinker@1.7.0",
+      "bom-ref": "conda/blinker@1.7.0"
+    },
+    {
+      "type": "library",
+      "name": "typing-extensions",
+      "version": "4.8.0",
+      "purl": "pkg:generic/typing-extensions@4.8.0",
+      "bom-ref": "conda/typing-extensions@4.8.0"
+    },
+    {
+      "type": "library",
+      "name": "himl-tb",
+      "version": "= health_azure.himl_tensorboard:main",
+      "purl": "pkg:pypi/himl-tb@health_azure.himl_tensorboard:main",
+      "bom-ref": "pypi/himl-tb@= health_azure.himl_tensorboard:main"
+    },
+    {
+      "type": "library",
+      "name": "himl-download",
+      "version": "= health_azure.himl_download:main",
+      "purl": "pkg:pypi/himl-download@health_azure.himl_download:main",
+      "bom-ref": "pypi/himl-download@= health_azure.himl_download:main"
+    },
+    {
+      "type": "library",
+      "name": "brotli-python",
+      "version": "1.0.9=py39h6a678d5_7",
+      "purl": "pkg:generic/brotli-python@1.0.9=py39h6a678d5_7",
+      "bom-ref": "conda/brotli-python@1.0.9=py39h6a678d5_7"
+    },
+    {
+      "type": "library",
+      "name": "cairo",
+      "version": "1.16.0=hb05425b_5",
+      "purl": "pkg:generic/cairo@1.16.0=hb05425b_5",
+      "bom-ref": "conda/cairo@1.16.0=hb05425b_5"
+    },
+    {
+      "type": "library",
+      "name": "expat",
+      "version": "2.5.0=h6a678d5_0",
+      "purl": "pkg:generic/expat@2.5.0=h6a678d5_0",
+      "bom-ref": "conda/expat@2.5.0=h6a678d5_0"
+    },
+    {
+      "type": "library",
+      "name": "ffmpeg",
+      "version": "4.2.2=h20bf706_0",
+      "purl": "pkg:generic/ffmpeg@4.2.2=h20bf706_0",
+      "bom-ref": "conda/ffmpeg@4.2.2=h20bf706_0"
+    },
+    {
+      "type": "library",
+      "name": "fontconfig",
+      "version": "2.14.2=h14ed4e7_0",
+      "purl": "pkg:generic/fontconfig@2.14.2=h14ed4e7_0",
+      "bom-ref": "conda/fontconfig@2.14.2=h14ed4e7_0"
+    },
+    {
+      "type": "library",
+      "name": "freetype",
+      "version": "2.12.1=h4a9f257_0",
+      "purl": "pkg:generic/freetype@2.12.1=h4a9f257_0",
+      "bom-ref": "conda/freetype@2.12.1=h4a9f257_0"
+    },
+    {
+      "type": "library",
+      "name": "gdk-pixbuf",
+      "version": "2.42.10=h5eee18b_0",
+      "purl": "pkg:generic/gdk-pixbuf@2.42.10=h5eee18b_0",
+      "bom-ref": "conda/gdk-pixbuf@2.42.10=h5eee18b_0"
+    },
+    {
+      "type": "library",
+      "name": "glib",
+      "version": "2.78.4=h6a678d5_0",
+      "purl": "pkg:generic/glib@2.78.4=h6a678d5_0",
+      "bom-ref": "conda/glib@2.78.4=h6a678d5_0"
+    },
+    {
+      "type": "library",
+      "name": "glib-tools",
+      "version": "2.78.4=h6a678d5_0",
+      "purl": "pkg:generic/glib-tools@2.78.4=h6a678d5_0",
+      "bom-ref": "conda/glib-tools@2.78.4=h6a678d5_0"
+    },
+    {
+      "type": "library",
+      "name": "gmp",
+      "version": "6.2.1=h295c915_3",
+      "purl": "pkg:generic/gmp@6.2.1=h295c915_3",
+      "bom-ref": "conda/gmp@6.2.1=h295c915_3"
+    },
+    {
+      "type": "library",
+      "name": "gnutls",
+      "version": "3.6.15=he1e5248_0",
+      "purl": "pkg:generic/gnutls@3.6.15=he1e5248_0",
+      "bom-ref": "conda/gnutls@3.6.15=he1e5248_0"
+    },
+    {
+      "type": "library",
+      "name": "icu",
+      "version": "73.1=h6a678d5_0",
+      "purl": "pkg:generic/icu@73.1=h6a678d5_0",
+      "bom-ref": "conda/icu@73.1=h6a678d5_0"
+    },
+    {
+      "type": "library",
+      "name": "jpeg",
+      "version": "9e=h5eee18b_1",
+      "purl": "pkg:generic/jpeg@9e=h5eee18b_1",
+      "bom-ref": "conda/jpeg@9e=h5eee18b_1"
+    },
+    {
+      "type": "library",
+      "name": "lame",
+      "version": "3.100=h7b6447c_0",
+      "purl": "pkg:generic/lame@3.100=h7b6447c_0",
+      "bom-ref": "conda/lame@3.100=h7b6447c_0"
+    },
+    {
+      "type": "library",
+      "name": "lcms2",
+      "version": "2.12=h3be6417_0",
+      "purl": "pkg:generic/lcms2@2.12=h3be6417_0",
+      "bom-ref": "conda/lcms2@2.12=h3be6417_0"
+    },
+    {
+      "type": "library",
+      "name": "lerc",
+      "version": "3.0=h295c915_0",
+      "purl": "pkg:generic/lerc@3.0=h295c915_0",
+      "bom-ref": "conda/lerc@3.0=h295c915_0"
+    },
+    {
+      "type": "library",
+      "name": "libdeflate",
+      "version": "1.17=h5eee18b_1",
+      "purl": "pkg:generic/libdeflate@1.17=h5eee18b_1",
+      "bom-ref": "conda/libdeflate@1.17=h5eee18b_1"
+    },
+    {
+      "type": "library",
+      "name": "libglib",
+      "version": "2.78.4=hdc74915_0",
+      "purl": "pkg:generic/libglib@2.78.4=hdc74915_0",
+      "bom-ref": "conda/libglib@2.78.4=hdc74915_0"
+    },
+    {
+      "type": "library",
+      "name": "libiconv",
+      "version": "1.16=h7f8727e_2",
+      "purl": "pkg:generic/libiconv@1.16=h7f8727e_2",
+      "bom-ref": "conda/libiconv@1.16=h7f8727e_2"
+    },
+    {
+      "type": "library",
+      "name": "libidn2",
+      "version": "2.3.4=h5eee18b_0",
+      "purl": "pkg:generic/libidn2@2.3.4=h5eee18b_0",
+      "bom-ref": "conda/libidn2@2.3.4=h5eee18b_0"
+    },
+    {
+      "type": "library",
+      "name": "libopus",
+      "version": "1.3.1=h7b6447c_0",
+      "purl": "pkg:generic/libopus@1.3.1=h7b6447c_0",
+      "bom-ref": "conda/libopus@1.3.1=h7b6447c_0"
+    },
+    {
+      "type": "library",
+      "name": "libpng",
+      "version": "1.6.39=h5eee18b_0",
+      "purl": "pkg:generic/libpng@1.6.39=h5eee18b_0",
+      "bom-ref": "conda/libpng@1.6.39=h5eee18b_0"
+    },
+    {
+      "type": "library",
+      "name": "libtasn1",
+      "version": "4.19.0=h5eee18b_0",
+      "purl": "pkg:generic/libtasn1@4.19.0=h5eee18b_0",
+      "bom-ref": "conda/libtasn1@4.19.0=h5eee18b_0"
+    },
+    {
+      "type": "library",
+      "name": "libtiff",
+      "version": "4.5.1=h6a678d5_0",
+      "purl": "pkg:generic/libtiff@4.5.1=h6a678d5_0",
+      "bom-ref": "conda/libtiff@4.5.1=h6a678d5_0"
+    },
+    {
+      "type": "library",
+      "name": "libunistring",
+      "version": "0.9.10=h27cfd23_0",
+      "purl": "pkg:generic/libunistring@0.9.10=h27cfd23_0",
+      "bom-ref": "conda/libunistring@0.9.10=h27cfd23_0"
+    },
+    {
+      "type": "library",
+      "name": "libvpx",
+      "version": "1.7.0=h439df22_0",
+      "purl": "pkg:generic/libvpx@1.7.0=h439df22_0",
+      "bom-ref": "conda/libvpx@1.7.0=h439df22_0"
+    },
+    {
+      "type": "library",
+      "name": "libwebp-base",
+      "version": "1.3.2=h5eee18b_0",
+      "purl": "pkg:generic/libwebp-base@1.3.2=h5eee18b_0",
+      "bom-ref": "conda/libwebp-base@1.3.2=h5eee18b_0"
+    },
+    {
+      "type": "library",
+      "name": "libxcb",
+      "version": "1.15=h7f8727e_0",
+      "purl": "pkg:generic/libxcb@1.15=h7f8727e_0",
+      "bom-ref": "conda/libxcb@1.15=h7f8727e_0"
+    },
+    {
+      "type": "library",
+      "name": "libxml2",
+      "version": "2.10.4=hf1b16e4_1",
+      "purl": "pkg:generic/libxml2@2.10.4=hf1b16e4_1",
+      "bom-ref": "conda/libxml2@2.10.4=hf1b16e4_1"
+    },
+    {
+      "type": "library",
+      "name": "lz4-c",
+      "version": "1.9.4=h6a678d5_0",
+      "purl": "pkg:generic/lz4-c@1.9.4=h6a678d5_0",
+      "bom-ref": "conda/lz4-c@1.9.4=h6a678d5_0"
+    },
+    {
+      "type": "library",
+      "name": "mkl-service",
+      "version": "2.4.0=py39h5eee18b_1",
+      "purl": "pkg:generic/mkl-service@2.4.0=py39h5eee18b_1",
+      "bom-ref": "conda/mkl-service@2.4.0=py39h5eee18b_1"
+    },
+    {
+      "type": "library",
+      "name": "mkl_fft",
+      "version": "1.3.8=py39h5eee18b_0",
+      "purl": "pkg:generic/mkl_fft@1.3.8=py39h5eee18b_0",
+      "bom-ref": "conda/mkl_fft@1.3.8=py39h5eee18b_0"
+    },
+    {
+      "type": "library",
+      "name": "mkl_random",
+      "version": "1.2.4=py39hdb19cb5_0",
+      "purl": "pkg:generic/mkl_random@1.2.4=py39hdb19cb5_0",
+      "bom-ref": "conda/mkl_random@1.2.4=py39hdb19cb5_0"
+    },
+    {
+      "type": "library",
+      "name": "nettle",
+      "version": "3.7.3=hbbd107a_1",
+      "purl": "pkg:generic/nettle@3.7.3=hbbd107a_1",
+      "bom-ref": "conda/nettle@3.7.3=hbbd107a_1"
+    },
+    {
+      "type": "library",
+      "name": "openh264",
+      "version": "2.1.1=h4ff587b_0",
+      "purl": "pkg:generic/openh264@2.1.1=h4ff587b_0",
+      "bom-ref": "conda/openh264@2.1.1=h4ff587b_0"
+    },
+    {
+      "type": "library",
+      "name": "openjpeg",
+      "version": "2.5.0=hfec8fc6_2",
+      "purl": "pkg:generic/openjpeg@2.5.0=hfec8fc6_2",
+      "bom-ref": "conda/openjpeg@2.5.0=hfec8fc6_2"
+    },
+    {
+      "type": "library",
+      "name": "openslide",
+      "version": "3.4.1=h7773abc_6",
+      "purl": "pkg:generic/openslide@3.4.1=h7773abc_6",
+      "bom-ref": "conda/openslide@3.4.1=h7773abc_6"
+    },
+    {
+      "type": "library",
+      "name": "openslide-python",
+      "version": "1.2.0=py39hb9d737c_2",
+      "purl": "pkg:generic/openslide-python@1.2.0=py39hb9d737c_2",
+      "bom-ref": "conda/openslide-python@1.2.0=py39hb9d737c_2"
+    },
+    {
+      "type": "library",
+      "name": "pcre2",
+      "version": "10.42=hebb0a14_0",
+      "purl": "pkg:generic/pcre2@10.42=hebb0a14_0",
+      "bom-ref": "conda/pcre2@10.42=hebb0a14_0"
+    },
+    {
+      "type": "library",
+      "name": "pixman",
+      "version": "0.40.0=h7f8727e_1",
+      "purl": "pkg:generic/pixman@0.40.0=h7f8727e_1",
+      "bom-ref": "conda/pixman@0.40.0=h7f8727e_1"
+    },
+    {
+      "type": "library",
+      "name": "python_abi",
+      "version": "3.9=4_cp39",
+      "purl": "pkg:generic/python_abi@3.9=4_cp39",
+      "bom-ref": "conda/python_abi@3.9=4_cp39"
+    },
+    {
+      "type": "library",
+      "name": "tbb",
+      "version": "2021.8.0=hdb19cb5_0",
+      "purl": "pkg:generic/tbb@2021.8.0=hdb19cb5_0",
+      "bom-ref": "conda/tbb@2021.8.0=hdb19cb5_0"
+    },
+    {
+      "type": "library",
+      "name": "x264",
+      "version": "1!157.20191217=h7b6447c_0",
+      "purl": "pkg:generic/x264@1!157.20191217=h7b6447c_0",
+      "bom-ref": "conda/x264@1!157.20191217=h7b6447c_0"
+    },
+    {
+      "type": "library",
+      "name": "zstd",
+      "version": "1.5.5=hc292b87_0",
+      "purl": "pkg:generic/zstd@1.5.5=hc292b87_0",
+      "bom-ref": "conda/zstd@1.5.5=hc292b87_0"
+    },
+    {
+      "type": "library",
+      "name": "asttokens",
+      "version": "2.4.1",
+      "purl": "pkg:generic/asttokens@2.4.1",
+      "bom-ref": "conda/asttokens@2.4.1"
+    },
+    {
+      "type": "library",
+      "name": "coloredlogs",
+      "version": "15.0.1",
+      "purl": "pkg:generic/coloredlogs@15.0.1",
+      "bom-ref": "conda/coloredlogs@15.0.1"
+    },
+    {
+      "type": "library",
+      "name": "comm",
+      "version": "0.2.1",
+      "purl": "pkg:generic/comm@0.2.1",
+      "bom-ref": "conda/comm@0.2.1"
+    },
+    {
+      "type": "library",
+      "name": "cucim",
+      "version": "22.10.0",
+      "purl": "pkg:generic/cucim@22.10.0",
+      "bom-ref": "conda/cucim@22.10.0"
+    },
+    {
+      "type": "library",
+      "name": "debugpy",
+      "version": "1.8.1",
+      "purl": "pkg:generic/debugpy@1.8.1",
+      "bom-ref": "conda/debugpy@1.8.1"
+    },
+    {
+      "type": "library",
+      "name": "decorator",
+      "version": "5.1.1",
+      "purl": "pkg:generic/decorator@5.1.1",
+      "bom-ref": "conda/decorator@5.1.1"
+    },
+    {
+      "type": "library",
+      "name": "diskcache",
+      "version": "5.6.3",
+      "purl": "pkg:generic/diskcache@5.6.3",
+      "bom-ref": "conda/diskcache@5.6.3"
+    },
+    {
+      "type": "library",
+      "name": "executing",
+      "version": "2.0.1",
+      "purl": "pkg:generic/executing@2.0.1",
+      "bom-ref": "conda/executing@2.0.1"
+    },
+    {
+      "type": "library",
+      "name": "girder-client",
+      "version": "3.1.14",
+      "purl": "pkg:generic/girder-client@3.1.14",
+      "bom-ref": "conda/girder-client@3.1.14"
+    },
+    {
+      "type": "library",
+      "name": "huggingface-hub",
+      "version": "0.21.3",
+      "purl": "pkg:generic/huggingface-hub@0.21.3",
+      "bom-ref": "conda/huggingface-hub@0.21.3"
+    },
+    {
+      "type": "library",
+      "name": "imageio",
+      "version": "2.34.0",
+      "purl": "pkg:generic/imageio@2.34.0",
+      "bom-ref": "conda/imageio@2.34.0"
+    },
+    {
+      "type": "library",
+      "name": "ipykernel",
+      "version": "6.21.2",
+      "purl": "pkg:generic/ipykernel@6.21.2",
+      "bom-ref": "conda/ipykernel@6.21.2"
+    },
+    {
+      "type": "library",
+      "name": "ipython",
+      "version": "8.18.1",
+      "purl": "pkg:generic/ipython@8.18.1",
+      "bom-ref": "conda/ipython@8.18.1"
+    },
+    {
+      "type": "library",
+      "name": "jedi",
+      "version": "0.19.1",
+      "purl": "pkg:generic/jedi@0.19.1",
+      "bom-ref": "conda/jedi@0.19.1"
+    },
+    {
+      "type": "library",
+      "name": "jupyter-client",
+      "version": "7.4.9",
+      "purl": "pkg:generic/jupyter-client@7.4.9",
+      "bom-ref": "conda/jupyter-client@7.4.9"
+    },
+    {
+      "type": "library",
+      "name": "jupyter-core",
+      "version": "5.7.1",
+      "purl": "pkg:generic/jupyter-core@5.7.1",
+      "bom-ref": "conda/jupyter-core@5.7.1"
+    },
+    {
+      "type": "library",
+      "name": "lightning-bolts",
+      "version": "0.4.0",
+      "purl": "pkg:generic/lightning-bolts@0.4.0",
+      "bom-ref": "conda/lightning-bolts@0.4.0"
+    },
+    {
+      "type": "library",
+      "name": "llvmlite",
+      "version": "0.42.0",
+      "purl": "pkg:generic/llvmlite@0.42.0",
+      "bom-ref": "conda/llvmlite@0.42.0"
+    },
+    {
+      "type": "library",
+      "name": "matplotlib-inline",
+      "version": "0.1.6",
+      "purl": "pkg:generic/matplotlib-inline@0.1.6",
+      "bom-ref": "conda/matplotlib-inline@0.1.6"
+    },
+    {
+      "type": "library",
+      "name": "monai-weekly",
+      "version": "1.2.dev2310",
+      "purl": "pkg:generic/monai-weekly@1.2.dev2310",
+      "bom-ref": "conda/monai-weekly@1.2.dev2310"
+    },
+    {
+      "type": "library",
+      "name": "nest-asyncio",
+      "version": "1.6.0",
+      "purl": "pkg:generic/nest-asyncio@1.6.0",
+      "bom-ref": "conda/nest-asyncio@1.6.0"
+    },
+    {
+      "type": "library",
+      "name": "networkx",
+      "version": "3.2.1",
+      "purl": "pkg:generic/networkx@3.2.1",
+      "bom-ref": "conda/networkx@3.2.1"
+    },
+    {
+      "type": "library",
+      "name": "numba",
+      "version": "0.59.0",
+      "purl": "pkg:generic/numba@0.59.0",
+      "bom-ref": "conda/numba@0.59.0"
+    },
+    {
+      "type": "library",
+      "name": "parso",
+      "version": "0.8.3",
+      "purl": "pkg:generic/parso@0.8.3",
+      "bom-ref": "conda/parso@0.8.3"
+    },
+    {
+      "type": "library",
+      "name": "pexpect",
+      "version": "4.9.0",
+      "purl": "pkg:generic/pexpect@4.9.0",
+      "bom-ref": "conda/pexpect@4.9.0"
+    },
+    {
+      "type": "library",
+      "name": "pipdeptree",
+      "version": "2.5.0",
+      "purl": "pkg:generic/pipdeptree@2.5.0",
+      "bom-ref": "conda/pipdeptree@2.5.0"
+    },
+    {
+      "type": "library",
+      "name": "prompt-toolkit",
+      "version": "3.0.43",
+      "purl": "pkg:generic/prompt-toolkit@3.0.43",
+      "bom-ref": "conda/prompt-toolkit@3.0.43"
+    },
+    {
+      "type": "library",
+      "name": "ptyprocess",
+      "version": "0.7.0",
+      "purl": "pkg:generic/ptyprocess@0.7.0",
+      "bom-ref": "conda/ptyprocess@0.7.0"
+    },
+    {
+      "type": "library",
+      "name": "pure-eval",
+      "version": "0.2.2",
+      "purl": "pkg:generic/pure-eval@0.2.2",
+      "bom-ref": "conda/pure-eval@0.2.2"
+    },
+    {
+      "type": "library",
+      "name": "pydicom",
+      "version": "2.3.0",
+      "purl": "pkg:generic/pydicom@2.3.0",
+      "bom-ref": "conda/pydicom@2.3.0"
+    },
+    {
+      "type": "library",
+      "name": "pynndescent",
+      "version": "0.5.11",
+      "purl": "pkg:generic/pynndescent@0.5.11",
+      "bom-ref": "conda/pynndescent@0.5.11"
+    },
+    {
+      "type": "library",
+      "name": "pywavelets",
+      "version": "1.4.1",
+      "purl": "pkg:generic/pywavelets@1.4.1",
+      "bom-ref": "conda/pywavelets@1.4.1"
+    },
+    {
+      "type": "library",
+      "name": "pyzmq",
+      "version": "25.1.2",
+      "purl": "pkg:generic/pyzmq@25.1.2",
+      "bom-ref": "conda/pyzmq@25.1.2"
+    },
+    {
+      "type": "library",
+      "name": "scikit-image",
+      "version": "0.19.3",
+      "purl": "pkg:generic/scikit-image@0.19.3",
+      "bom-ref": "conda/scikit-image@0.19.3"
+    },
+    {
+      "type": "library",
+      "name": "seaborn",
+      "version": "0.13.0",
+      "purl": "pkg:generic/seaborn@0.13.0",
+      "bom-ref": "conda/seaborn@0.13.0"
+    },
+    {
+      "type": "library",
+      "name": "stack-data",
+      "version": "0.6.3",
+      "purl": "pkg:generic/stack-data@0.6.3",
+      "bom-ref": "conda/stack-data@0.6.3"
+    },
+    {
+      "type": "library",
+      "name": "tifffile",
+      "version": "2022.10.10",
+      "purl": "pkg:generic/tifffile@2022.10.10",
+      "bom-ref": "conda/tifffile@2022.10.10"
+    },
+    {
+      "type": "library",
+      "name": "timm",
+      "version": "0.6.12",
+      "purl": "pkg:generic/timm@0.6.12",
+      "bom-ref": "conda/timm@0.6.12"
+    },
+    {
+      "type": "library",
+      "name": "torchstain",
+      "version": "1.3.0",
+      "purl": "pkg:generic/torchstain@1.3.0",
+      "bom-ref": "conda/torchstain@1.3.0"
+    },
+    {
+      "type": "library",
+      "name": "tornado",
+      "version": "6.4",
+      "purl": "pkg:generic/tornado@6.4",
+      "bom-ref": "conda/tornado@6.4"
+    },
+    {
+      "type": "library",
+      "name": "traitlets",
+      "version": "5.14.1",
+      "purl": "pkg:generic/traitlets@5.14.1",
+      "bom-ref": "conda/traitlets@5.14.1"
+    },
+    {
+      "type": "library",
+      "name": "umap-learn",
+      "version": "0.5.2",
+      "purl": "pkg:generic/umap-learn@0.5.2",
+      "bom-ref": "conda/umap-learn@0.5.2"
+    },
+    {
+      "type": "library",
+      "name": "wcwidth",
+      "version": "0.2.13",
+      "purl": "pkg:generic/wcwidth@0.2.13",
+      "bom-ref": "conda/wcwidth@0.2.13"
+    },
+    {
+      "type": "library",
+      "name": "yacs",
+      "version": "0.1.8",
+      "purl": "pkg:generic/yacs@0.1.8",
+      "bom-ref": "conda/yacs@0.1.8"
+    },
+    {
+      "type": "library",
+      "name": "azureml-defaults",
+      "version": "1.32.0",
+      "purl": "pkg:generic/azureml-defaults@1.32.0",
+      "bom-ref": "conda/azureml-defaults@1.32.0"
+    },
+    {
+      "type": "library",
+      "name": "-r",
+      "version": "unspecified",
+      "purl": "pkg:generic/-r",
+      "bom-ref": "conda/-r@unspecified"
+    }
+  ]
+}
